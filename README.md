@@ -1,7 +1,7 @@
 # Polling Application
 
 This application allows users to get an opinion on a certain topic.\
-Technology used: React, Nextjs, TailwindCSS, GraphQL, Apollo Server, MongoDB.\
+Technology used: TypeScript, React, Nextjs, TailwindCSS, GraphQL, Apollo Server, MongoDB.\
 Live preview is available [here](https://poll-app.blipinski.pl/ 'Polling Application')
 
 ## Installation
