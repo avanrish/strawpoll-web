@@ -100,23 +100,32 @@ export default function Results({ pollData, user }: IResults) {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await getSession(context);
 
-  const {
-    data: { getPoll },
-  } = await client.query({
-    query: GET_POLL,
-    variables: {
-      id: context?.params?.id,
-      name: session ? session.user?.name : 'guest',
-    },
-    fetchPolicy: 'network-only',
-  });
+  try {
+    const {
+      data: { getPoll },
+    } = await client.query({
+      query: GET_POLL,
+      variables: {
+        id: context?.params?.id,
+        name: session ? session.user?.name : 'guest',
+      },
+      fetchPolicy: 'network-only',
+    });
 
-  return {
-    props: {
-      pollData: getPoll,
-      user: session ? session.user : { name: 'guest' },
-    },
-  };
+    return {
+      props: {
+        pollData: getPoll,
+        user: session ? session.user : { name: 'guest' },
+      },
+    };
+  } catch {
+    return {
+      redirect: {
+        permanent: true,
+        destination: '/not-found',
+      },
+    };
+  }
 };
 
 const GET_POLL = gql`

@@ -19,7 +19,9 @@ module.exports = {
         const ip = getUserIP(context.req);
         const { name } = context.req.body.variables;
         const findByIp = parent.voted.filter((u) => u.ip === ip);
-        const findByUsername = parent.voted.filter((u) => u.name === name);
+        const findByUsername = parent.voted.filter(
+          (u) => u.name === name && name !== 'guest'
+        );
         const votesSet = new Set();
         findByIp.forEach((item) => {
           item.answers.forEach((ans) => votesSet.add(ans));
@@ -103,7 +105,7 @@ module.exports = {
         const ip = getUserIP(context.req);
 
         let didVote;
-        didVote = poll.voted.find((el) => el.name === name);
+        didVote = poll.voted.find((el) => el.name === name && name !== 'guest');
         if (!didVote) didVote = poll.voted.find((el) => el.ip === ip);
         if (!didVote) {
           poll.voted.push({
