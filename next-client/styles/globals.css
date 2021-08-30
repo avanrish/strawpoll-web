@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply text-red-800 pb-3 pt-2 px-2 cursor-pointer select-none font-semibold text-lg border-t-2 border-transparent hover:text-[#252525] hover:border-red-800 transition duration-200 ease-out max-w-[200px] whitespace-nowrap overflow-hidden overflow-ellipsis;
+  }
+  .active-link {
+    @apply text-[#252525] border-red-800;
+  }
+  .button {
+    @apply bg-[#B11616] w-full md:w-48 text-center p-2 rounded-lg hover:bg-red-700 active:scale-95 transform transition duration-200;
+  }
+  .input {
+    @apply bg-[#2C2C2C] border border-[#B11616] hover:border-[#F6522E] focus:border-[#F6522E] p-1 rounded-md;
+  }
+  .error {
+    @apply bg-red-500 text-black font-semibold p-2 rounded-lg my-2;
+  }
+  .container {
+    @apply max-w-3xl mx-auto w-full p-4 min-h-0 bg-[#2C2C2C] mt-12 text-white rounded-xl shadow-md;
+  }
+}
+
+* {
+  @apply outline-none;
+}
