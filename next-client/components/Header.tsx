@@ -1,34 +1,50 @@
 import Image from 'next/image';
 import { signIn, signOut, useSession } from 'next-auth/client';
-import { LogoutIcon } from '@heroicons/react/outline';
+import { LogoutIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 import Link from './Link';
-import { useRouter } from 'next/router';
 
 export default function Header() {
+  const [active, setActive] = useState(false);
   const [session, loading] = useSession();
   const router = useRouter();
 
   return (
-    <header className="flex items-center h-[50px] justify-between px-3 sticky top-0 z-40 bg-white">
+    <header className="flex flex-col md:flex-row md:items-center h-[50px] md:justify-between md:px-3 sticky top-0 z-40 bg-white">
       {/* Left - Logo */}
-      <Link href="/" passHref>
-        <div className="flex items-center space-x-3 hover:brightness-110 cursor-pointer transition">
-          <Image
-            src="/chart.png"
-            alt="Poll"
-            width={32}
-            height={32}
-            draggable={false}
-          />
-          <p className="text-2xl font-semibold text-red-800 select-none">
-            Poll App
-          </p>
+      <div className="flex">
+        <Link href="/" passHref>
+          <div className="flex p-2 md:p-0 items-center space-x-3 hover:brightness-110 cursor-pointer transition">
+            <Image
+              src="/chart.png"
+              alt="Poll"
+              width={32}
+              height={32}
+              draggable={false}
+            />
+            <p className="text-2xl font-semibold text-red-800 select-none">
+              Poll App
+            </p>
+          </div>
+        </Link>
+
+        <div className="md:hidden ml-auto inline-flex p-3 text-red-800">
+          {!active ? (
+            <MenuIcon className="w-6 h-6" onClick={() => setActive(true)} />
+          ) : (
+            <XIcon className="w-6 h-6" onClick={() => setActive(false)} />
+          )}
         </div>
-      </Link>
+      </div>
 
       {/* Middle - Create & Explore */}
-      <div className="flex space-x-5">
+      <div
+        className={`${
+          active ? 'flex' : 'hidden md:flex'
+        } flex-col md:flex-row md:space-x-5 bg-white`}
+      >
         <Link href="/create" passHref>
           <p
             className={`link ${router.pathname === '/create' && 'active-link'}`}
@@ -48,7 +64,11 @@ export default function Header() {
       </div>
 
       {/* Right - User */}
-      <div className="flex space-x-5 items-center">
+      <div
+        className={`${
+          active ? 'flex' : 'hidden md:flex'
+        } flex-col md:flex-row md:space-x-5 md:items-center bg-white`}
+      >
         {!loading ? (
           !session ? (
             // Sign In button if user is not logged in
@@ -69,10 +89,11 @@ export default function Header() {
               </Link>
               {/* Logout Button */}
               <div
-                className="flex h-[50px] border-t-2 pt-1.5 pb-2 px-1 border-transparent hover:border-red-800 text-red-800 hover:text-[#252525] cursor-pointer transiton duration-200 ease-out"
+                className="flex link md:py-2 md:px-1 space-x-2 md:space-x-0"
                 onClick={() => signOut()}
               >
-                <LogoutIcon className="w-10" />
+                <span className="md:hidden">Sign Out</span>
+                <LogoutIcon className="h-8" />
               </div>
             </>
           )
