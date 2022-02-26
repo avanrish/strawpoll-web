@@ -1,6 +1,8 @@
 import NextAuth from 'next-auth';
 import GithubProvider from 'next-auth/providers/github';
 
+import { User } from '../../../types';
+
 export default NextAuth({
   providers: [
     GithubProvider({
@@ -21,10 +23,3 @@ export default NextAuth({
     },
   },
 });
-
-type User = {
-  name?: string | null | undefined;
-  email?: string | null | undefined;
-  image?: string | null | undefined;
-  uid?: string | null | undefined;
-};

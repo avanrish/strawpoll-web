@@ -5,24 +5,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import formatDistanceToNowStrict from 'date-fns/formatDistanceToNowStrict';
 
-import { IPollsList } from './explore';
 import client from '../apollo-client';
 import Link from '../components/Link';
+import { DashboardProps } from '../types';
 
-export interface IUser {
-  user: {
-    email?: string;
-    name: string;
-    image?: string;
-  };
-}
-
-interface IProps {
-  user: IUser['user'];
-  polls: IPollsList['polls'];
-}
-
-export default function Dashboard({ user, polls }: IProps) {
+export default function Dashboard({ user, polls }: DashboardProps) {
   return (
     <div className="container">
       <Head>

@@ -6,16 +6,9 @@ import { formatDistanceToNowStrict } from 'date-fns';
 
 import client from '../apollo-client';
 import Link from '../components/Link';
+import { ExploreProps } from '../types';
 
-export interface IPollsList {
-  polls: {
-    id: string;
-    title: string;
-    createdAt: string;
-  }[];
-}
-
-export default function Explore({ polls }: IPollsList) {
+export default function Explore({ polls }: ExploreProps) {
   return (
     <div className="container">
       <Head>
@@ -27,13 +20,7 @@ export default function Explore({ polls }: IPollsList) {
         {polls?.map((poll) => (
           <Link href={`/p/${poll.id}`} passHref key={poll.id}>
             <div className="p-2 flex flex-row items-center hover:bg-[#252525] rounded-lg space-x-3 transition ease-out">
-              <Image
-                src="/chart.png"
-                width={50}
-                height={50}
-                alt="Chart"
-                draggable={false}
-              />
+              <Image src="/chart.png" width={50} height={50} alt="Chart" draggable={false} />
               <div className="flex flex-col max-w-[280px]">
                 <h2 className="hover:underline whitespace-nowrap overflow-hidden overflow-ellipsis">
                   {poll.title}

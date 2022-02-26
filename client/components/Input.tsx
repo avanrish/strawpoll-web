@@ -1,11 +1,6 @@
-interface IInput {
-  type: string;
-  body: string;
-  onChange: (body: string) => void;
-  selected: boolean;
-}
+import { InputProps } from '../types';
 
-export default function Input({ type, body, onChange, selected }: IInput) {
+export default function Input({ type, body, onChange, selected }: InputProps) {
   return (
     <label className="flex items-center space-x-3">
       <input

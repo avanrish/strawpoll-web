@@ -5,10 +5,9 @@ import { useRouter } from 'next/router';
 import { GetServerSideProps } from 'next';
 import { getSession } from 'next-auth/react';
 
-import { IUser } from './dashboard';
-import { GET_POLLS } from './explore';
+import { CreateProps } from '../types';
 
-export default function Create({ user }: IUser) {
+export default function Create({ user }: CreateProps) {
   const [errors, setErrors] = useState<any>({});
   const [form, setForm] = useState({
     title: '',
@@ -16,6 +15,7 @@ export default function Create({ user }: IUser) {
     multiple: false,
     visibility: 'public',
     name: user.name,
+    uid: user.uid,
   });
   const router = useRouter();
 
