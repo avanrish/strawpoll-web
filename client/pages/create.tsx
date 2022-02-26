@@ -126,6 +126,7 @@ const CREATE_POLL = gql`
     $multiple: Boolean!
     $visibility: String!
     $name: String!
+    $uid: String
   ) {
     createPoll(
       pollInput: {
@@ -134,6 +135,7 @@ const CREATE_POLL = gql`
         multiple: $multiple
         visibility: $visibility
         name: $name
+        uid: $uid
       }
     ) {
       id

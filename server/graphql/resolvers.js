@@ -15,24 +15,18 @@ module.exports = {
       return parent.voted.length;
     },
     myVotes: (parent, _, context) => {
-      try {
-        const ip = getUserIP(context.req);
-        const { name } = context.req.body.variables;
-        const findByIp = parent.voted.filter((u) => u.ip === ip);
-        const findByUsername = parent.voted.filter(
-          (u) => u.name === name && name !== 'guest'
-        );
-        const votesSet = new Set();
-        findByIp.forEach((item) => {
-          item.answers.forEach((ans) => votesSet.add(ans));
-        });
-        findByUsername.forEach((item) => {
-          item.answers.forEach((ans) => votesSet.add(ans));
-        });
-        return Array.from(votesSet);
-      } catch (err) {
-        console.log(err);
-      }
+      const ip = getUserIP(context.req);
+      const { uid } = context.req.body.variables;
+      const findByIp = parent.voted.filter((u) => u.ip === ip);
+      const findByUserId = parent.voted.filter((u) => uid !== undefined && u.uid === uid);
+      const votesSet = new Set();
+      findByIp.forEach((item) => {
+        item.answers.forEach((ans) => votesSet.add(ans));
+      });
+      findByUserId.forEach((item) => {
+        item.answers.forEach((ans) => votesSet.add(ans));
+      });
+      return Array.from(votesSet);
     },
   },
   Query: {
@@ -65,10 +59,7 @@ module.exports = {
     },
   },
   Mutation: {
-    createPoll: async (
-      _,
-      { pollInput: { title, answers, multiple, visibility, name } }
-    ) => {
+    createPoll: async (_, { pollInput: { title, answers, multiple, visibility, name, uid } }) => {
       const { errors, valid, newAnswers } = validatePollInput(title, answers);
 
       if (!valid) {
@@ -83,19 +74,20 @@ module.exports = {
         createdAt: new Date().toISOString(),
         voted: [],
         name,
+        uid,
       });
 
       const poll = await newPoll.save();
       return poll;
     },
-    vote: async (_, { id, selected, name }, context) => {
+    vote: async (_, { id, selected, uid }, context) => {
       const poll = await Poll.findById(id);
       if (poll) {
         const { errors, valid } = validateVoteInput(selected);
         if (!valid) throw new UserInputError('Errors', { errors });
 
         const voted = [];
-        poll.answers.forEach((ans, i) => {
+        poll.answers.forEach((ans) => {
           if (selected.find((el) => el === ans.body)) {
             ans.votes += 1;
             voted.push(ans.body);
@@ -103,21 +95,19 @@ module.exports = {
         });
 
         const ip = getUserIP(context.req);
-
         let didVote;
-        didVote = poll.voted.find((el) => el.name === name && name !== 'guest');
+        didVote = poll.voted.find((el) => uid !== undefined && el.uid === uid);
         if (!didVote) didVote = poll.voted.find((el) => el.ip === ip);
         if (!didVote) {
           poll.voted.push({
             ip,
-            name,
+            uid,
             answers: voted,
           });
         } else
           throw new UserInputError('Errors', {
             errors: { voted: 'You already voted on this poll' },
           });
-
         await poll.save();
 
         return poll;

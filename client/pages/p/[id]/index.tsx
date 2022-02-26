@@ -4,28 +4,17 @@ import { gql, useMutation } from '@apollo/client';
 import { formatDistanceToNowStrict } from 'date-fns';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { useSession } from 'next-auth/react';
 
 import Link from '../../../components/Link';
 import client from '../../../apollo-client';
 import Input from '../../../components/Input';
 import useVotes from '../../../hooks/useVotes';
+import { PollProps } from '../../../types';
 
-export interface IPoll {
-  pollData: {
-    id: string;
-    title: string;
-    answers: {
-      body: string;
-      votes: number;
-    }[];
-    multiple: boolean;
-    createdAt: string;
-    name: string;
-  };
-}
-
-export default function Poll({ pollData }: IPoll) {
+export default function Poll({ pollData }: PollProps) {
   const [errors, setErrors] = useState({});
+  const { data: session } = useSession();
   const { selected, handleChange } = useVotes({
     answers: pollData.answers,
     multiple: pollData.multiple,
@@ -37,7 +26,7 @@ export default function Poll({ pollData }: IPoll) {
     variables: {
       id: pollData.id,
       selected: selection.map((sel) => sel.body),
-      name: pollData.name,
+      uid: session?.user.uid,
     },
     onError(err) {
       setErrors(err?.graphQLErrors[0]?.extensions?.errors as {});
@@ -125,8 +114,8 @@ const GET_POLL = gql`
 `;
 
 const VOTE = gql`
-  mutation vote($id: ID, $selected: [String], $name: String) {
-    vote(id: $id, selected: $selected, name: $name) {
+  mutation vote($id: ID, $selected: [String], $uid: String) {
+    vote(id: $id, selected: $selected, uid: $uid) {
       id
     }
   }

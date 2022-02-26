@@ -31,3 +31,25 @@ export type InputProps = {
   onChange: (body: string) => void;
   selected: boolean;
 };
+
+export type Poll = {
+  id: string;
+  title: string;
+  answers: {
+    body: string;
+    votes: number;
+  }[];
+  multiple: boolean;
+  createdAt: string;
+  name: string;
+  uid: string | null;
+};
+
+export type PollProps = {
+  pollData: Poll;
+};
+
+export type ResultsProps = {
+  pollData: Poll & { totalVotes: number; totalPeople: number; myVotes: string[] };
+  user: User | null;
+};

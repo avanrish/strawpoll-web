@@ -16,6 +16,7 @@ module.exports = gql`
     totalVotes: Int!
     myVotes: [String]!
     totalPeople: Int!
+    uid: String
   }
   input PollInput {
     title: String!
@@ -23,14 +24,15 @@ module.exports = gql`
     multiple: Boolean!
     visibility: String!
     name: String!
+    uid: String
   }
   type Query {
     getPolls: [Poll]!
-    getPoll(id: ID, name: String): Poll!
+    getPoll(id: ID, uid: String): Poll!
     getUserPolls(name: String): [Poll]
   }
   type Mutation {
     createPoll(pollInput: PollInput): Poll!
-    vote(id: ID, selected: [String], name: String): Poll!
+    vote(id: ID, selected: [String], uid: String): Poll!
   }
 `;

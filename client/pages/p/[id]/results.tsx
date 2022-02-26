@@ -10,34 +10,14 @@ import client from '../../../apollo-client';
 import Answer from '../../../components/Answer';
 import useColors from '../../../hooks/useColors';
 import PieChart from '../../../components/PieChart';
+import { ResultsProps } from '../../../types';
 
-interface IResults {
-  pollData: {
-    id: string;
-    title: string;
-    answers: {
-      body: string;
-      votes: number;
-    }[];
-    createdAt: string;
-    name: string;
-    totalVotes: number;
-    myVotes: string[];
-    totalPeople: number;
-  };
-  user: {
-    name: string;
-    email?: string;
-    image?: string;
-  };
-}
-
-export default function Results({ pollData, user }: IResults) {
+export default function Results({ pollData, user }: ResultsProps) {
   const [poll, setPoll] = useState(pollData);
   const colors = useColors(pollData.answers.length);
 
   const { loading, data } = useQuery(GET_POLL, {
-    variables: { id: pollData.id, name: user.name },
+    variables: { id: pollData.id, uid: user?.uid },
     pollInterval: 2500,
     fetchPolicy: 'network-only',
   });
@@ -105,7 +85,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       query: GET_POLL,
       variables: {
         id: context?.params?.id,
-        name: session ? session.user?.name : 'guest',
+        uid: session?.user.uid || null,
       },
       fetchPolicy: 'network-only',
     });
@@ -113,10 +93,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     return {
       props: {
         pollData: getPoll,
-        user: session ? session.user : { name: 'guest' },
+        user: session?.user || null,
       },
     };
-  } catch {
+  } catch (err) {
     return {
       notFound: true,
     };
@@ -124,8 +104,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 
 const GET_POLL = gql`
-  query getPoll($id: ID, $name: String) {
-    getPoll(id: $id, name: $name) {
+  query getPoll($id: ID, $uid: String) {
+    getPoll(id: $id, uid: $uid) {
       id
       title
       answers {
@@ -134,6 +114,7 @@ const GET_POLL = gql`
       }
       createdAt
       name
+      uid
       totalVotes
       myVotes
       totalPeople
