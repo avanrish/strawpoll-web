@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { gql, useMutation } from '@apollo/client';
 import { useRouter } from 'next/router';
 import { GetServerSideProps } from 'next';
-import { getSession } from 'next-auth/client';
+import { getSession } from 'next-auth/react';
 
 import { IUser } from './dashboard';
 import { GET_POLLS } from './explore';
@@ -19,15 +19,11 @@ export default function Create({ user }: IUser) {
   });
   const router = useRouter();
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
-    i?: number
-  ): void => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>, i?: number): void => {
     if (i === undefined)
       setForm((prev) => ({
         ...prev,
-        [e.target.name]:
-          e.target.type === 'checkbox' ? e.target.checked : e.target.value,
+        [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value,
       }));
     else {
       if (i === form.answers.length - 1)
@@ -100,9 +96,7 @@ export default function Create({ user }: IUser) {
         <select
           name="visibility"
           className="input w-24"
-          onChange={(e) =>
-            setForm((prev) => ({ ...prev, visibility: e.target.value }))
-          }
+          onChange={(e) => setForm((prev) => ({ ...prev, visibility: e.target.value }))}
         >
           <option value="public">Public</option>
           <option value="unlisted">Unlisted</option>

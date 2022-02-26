@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, signOut, useSession } from 'next-auth/react';
 import { LogoutIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -8,7 +8,8 @@ import Link from './Link';
 
 export default function Header() {
   const [active, setActive] = useState(false);
-  const [session, loading] = useSession();
+  const { data: session, status } = useSession();
+  const loading = status === 'loading';
   const router = useRouter();
 
   return (
@@ -17,16 +18,8 @@ export default function Header() {
       <div className="flex">
         <Link href="/" passHref>
           <div className="flex p-2 md:p-0 items-center space-x-3 hover:brightness-110 cursor-pointer transition">
-            <Image
-              src="/chart.png"
-              alt="Poll"
-              width={32}
-              height={32}
-              draggable={false}
-            />
-            <p className="text-2xl font-semibold text-red-800 select-none">
-              Poll App
-            </p>
+            <Image src="/chart.png" alt="Poll" width={32} height={32} draggable={false} />
+            <p className="text-2xl font-semibold text-red-800 select-none">Poll App</p>
           </div>
         </Link>
 
@@ -46,20 +39,10 @@ export default function Header() {
         } flex-col md:flex-row md:space-x-5 bg-white`}
       >
         <Link href="/create" passHref>
-          <p
-            className={`link ${router.pathname === '/create' && 'active-link'}`}
-          >
-            Create Poll
-          </p>
+          <p className={`link ${router.pathname === '/create' && 'active-link'}`}>Create Poll</p>
         </Link>
         <Link href="/explore" passHref>
-          <p
-            className={`link ${
-              router.pathname === '/explore' && 'active-link'
-            }`}
-          >
-            Explore
-          </p>
+          <p className={`link ${router.pathname === '/explore' && 'active-link'}`}>Explore</p>
         </Link>
       </div>
 
@@ -79,11 +62,7 @@ export default function Header() {
             <>
               {/* Link to Dashboard if logged in */}
               <Link href="/dashboard" passHref className="flex">
-                <p
-                  className={`link ${
-                    router.pathname === '/dashboard' && 'active-link'
-                  }`}
-                >
+                <p className={`link ${router.pathname === '/dashboard' && 'active-link'}`}>
                   {session.user?.name}
                 </p>
               </Link>

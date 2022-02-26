@@ -40,7 +40,7 @@ export default function Poll({ pollData }: IPoll) {
       name: pollData.name,
     },
     onError(err) {
-      setErrors(err?.graphQLErrors[0]?.extensions?.errors);
+      setErrors(err?.graphQLErrors[0]?.extensions?.errors as {});
     },
     update() {
       router.push(`/p/${pollData.id}/results`);
@@ -66,9 +66,7 @@ export default function Poll({ pollData }: IPoll) {
           ))}
         </ul>
       )}
-      <p className="font-semibold">
-        Choose {pollData.multiple && 'at least'} one answer:
-      </p>
+      <p className="font-semibold">Choose {pollData.multiple && 'at least'} one answer:</p>
       <div className="flex flex-col space-y-1">
         {pollData.answers.map((ans, i) => (
           <Input
@@ -105,10 +103,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     };
   } catch {
     return {
-      redirect: {
-        permanent: true,
-        destination: '/not-found',
-      },
+      notFound: true,
     };
   }
 };

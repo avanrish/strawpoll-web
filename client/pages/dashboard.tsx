@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 import { GetServerSideProps } from 'next';
-import { getSession } from 'next-auth/client';
+import { getSession } from 'next-auth/react';
 import Head from 'next/head';
 import Image from 'next/image';
 import formatDistanceToNowStrict from 'date-fns/formatDistanceToNowStrict';
@@ -34,13 +34,7 @@ export default function Dashboard({ user, polls }: IProps) {
           {polls?.map((poll) => (
             <Link href={`/p/${poll.id}`} passHref key={poll.id}>
               <div className="p-2 flex flex-row items-center hover:bg-[#252525] rounded-lg space-x-3 transition ease-out">
-                <Image
-                  src="/chart.png"
-                  width={50}
-                  height={50}
-                  alt="Chart"
-                  draggable={false}
-                />
+                <Image src="/chart.png" width={50} height={50} alt="Chart" draggable={false} />
                 <div className="flex flex-col max-w-[280px]">
                   <h2 className="hover:underline whitespace-nowrap overflow-hidden overflow-ellipsis">
                     {poll.title}
@@ -56,9 +50,7 @@ export default function Dashboard({ user, polls }: IProps) {
           ))}
         </div>
       ) : (
-        <p className="text-lg text-center mt-2">
-          You don&apos;t have any polls yet.
-        </p>
+        <p className="text-lg text-center mt-2">You don&apos;t have any polls yet.</p>
       )}
     </div>
   );

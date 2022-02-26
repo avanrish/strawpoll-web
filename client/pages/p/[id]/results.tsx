@@ -1,7 +1,7 @@
 import { gql, useQuery } from '@apollo/client';
 import { formatDistanceToNowStrict } from 'date-fns';
 import { GetServerSideProps } from 'next';
-import { getSession } from 'next-auth/client';
+import { getSession } from 'next-auth/react';
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 
@@ -86,9 +86,7 @@ export default function Results({ pollData, user }: IResults) {
           ) : null}
         </div>
       </div>
-      <p className="text-2xl font-semibold mt-8">
-        Total votes: {poll.totalVotes}
-      </p>
+      <p className="text-2xl font-semibold mt-8">Total votes: {poll.totalVotes}</p>
 
       <Link href={`/p/${poll.id}`} passHref>
         <button className="button mt-2">Vote</button>
@@ -120,10 +118,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     };
   } catch {
     return {
-      redirect: {
-        permanent: true,
-        destination: '/not-found',
-      },
+      notFound: true,
     };
   }
 };

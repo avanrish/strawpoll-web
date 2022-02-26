@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import { Provider } from 'next-auth/client';
+import { SessionProvider } from 'next-auth/react';
 import Router from 'next/router';
 import ProgressBar from '@badrap/bar-of-progress';
 import { ApolloProvider } from '@apollo/client';
@@ -22,12 +22,12 @@ Router.events.on('routeChangeError', progress.finish);
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ApolloProvider client={client}>
-      <Provider session={pageProps.session}>
+      <SessionProvider session={pageProps.session}>
         <Header />
         <main className="flex flex-col bg-[#252525] min-h-[calc(100vh-50px)]">
           <Component {...pageProps} />
         </main>
-      </Provider>
+      </SessionProvider>
     </ApolloProvider>
   );
 }
