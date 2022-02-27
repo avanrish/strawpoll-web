@@ -49,9 +49,9 @@ module.exports = {
         throw new Eror(err);
       }
     },
-    getUserPolls: async (_, { name }) => {
+    getUserPolls: async (_, { uid }) => {
       try {
-        const poll = await Poll.find({ name: name });
+        const poll = await Poll.find({ uid });
         return poll;
       } catch (err) {
         throw new Error(err);

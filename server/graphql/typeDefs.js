@@ -29,7 +29,7 @@ module.exports = gql`
   type Query {
     getPolls: [Poll]!
     getPoll(id: ID, uid: String): Poll!
-    getUserPolls(name: String): [Poll]
+    getUserPolls(uid: String): [Poll]
   }
   type Mutation {
     createPoll(pollInput: PollInput): Poll!

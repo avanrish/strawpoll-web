@@ -15,7 +15,7 @@ export default function Dashboard({ user, polls }: DashboardProps) {
       <Head>
         <title>{user.name} / Poll App</title>
       </Head>
-      <h1 className="font-semibold text-3xl text-center">Your Polls</h1>
+      <h1 className="font-semibold text-3xl text-center mb-2">Your Polls</h1>
       {polls.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 overflow-hidden">
           {polls?.map((poll) => (
@@ -48,17 +48,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   if (!session)
     return {
-      redirect: {
-        permanent: true,
-        destination: '/',
-      },
+      notFound: true,
     };
 
   const {
     data: { getUserPolls },
   } = await client.query({
     query: GET_USER_POLLS,
-    variables: { name: session?.user?.name },
+    variables: { uid: session?.user?.uid },
   });
 
   return {
@@ -70,8 +67,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 
 const GET_USER_POLLS = gql`
-  query userPolls($name: String) {
-    getUserPolls(name: $name) {
+  query userPolls($uid: String) {
+    getUserPolls(uid: $uid) {
       id
       title
       createdAt
