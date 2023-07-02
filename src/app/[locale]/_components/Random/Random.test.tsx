@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Random } from '@/src/app/[locale]/_components/Random/Random';
-import '@testing-library/jest-dom/extend-expect';
 
 describe('Random', () => {
   it('display post', async () => {

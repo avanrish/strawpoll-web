@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 
 export const handlers = [
-  rest.post('https://jsonplaceholder.typicode.com/posts/1', (req, res, ctx) => {
+  rest.get('https://jsonplaceholder.typicode.com/posts/1', (req, res, ctx) => {
     return res(
       ctx.json({
         userId: 1,
