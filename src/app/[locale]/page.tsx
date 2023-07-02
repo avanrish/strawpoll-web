@@ -1,9 +1,12 @@
 import { useTranslations } from 'next-intl';
+import { Random } from '@/src/app/[locale]/_components/Random/Random';
 
 export default function Home() {
   const t = useTranslations('Index');
 
   return (
-      <div>{t('helloWorld')}</div>
-  )
+    <div>
+      <Random />
+    </div>
+  );
 }
