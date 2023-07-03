@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { Random } from '@/src/app/[locale]/_components/Random/Random';
+import { Random } from '@/src/components/Random/Random';
 
 export default function Home() {
   const t = useTranslations('Index');

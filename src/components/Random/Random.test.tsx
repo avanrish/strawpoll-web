@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { Random } from '@/src/app/[locale]/_components/Random/Random';
+import { Random } from '@/src/components/Random/Random';
 
 describe('Random', () => {
   it('display post', async () => {
