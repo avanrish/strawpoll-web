@@ -25,7 +25,7 @@ export default function RootLayout({ children, params }: IRootLayoutProps) {
   }
 
   return (
-    <html lang={locale} className="overflow-y-scroll">
+    <html lang={locale}>
       <body className={inter.className}>
         <Header />
         <main>{children}</main>
