@@ -1,5 +1,8 @@
 {
   "Index": {
     "helloWorld": "Hello World!"
+  },
+  "Header": {
+    "createPoll": "Create Poll"
   }
 }
