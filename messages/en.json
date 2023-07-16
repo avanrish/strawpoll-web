@@ -3,6 +3,9 @@
     "helloWorld": "Hello World!"
   },
   "Header": {
-    "createPoll": "Create Poll"
+    "createPoll": "Create Poll",
+    "scheduleMeeting": "Schedule Meeting",
+    "demo": "Demo",
+    "pricing": "Pricing"
   }
 }

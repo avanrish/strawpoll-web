@@ -2,19 +2,20 @@
 
 import { useState } from 'react';
 import Link from 'next-intl/link';
-import { useTranslations } from 'next-intl';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useSpring, animated, useTransition } from '@react-spring/web';
+import { useSpring, animated } from '@react-spring/web';
 
 import { Routes } from '@/src/utils/enums/routes';
 import { Logo } from '@/src/components/Logo/Logo';
 import { navLinks } from '@/src/utils/fixtures/navLinks';
 import { mobileMenuAnimation } from '@/src/utils/animations/mobileMenu';
+import { NavigationLink } from '@/src/components/Header/NavigationLink';
 
 export const MobileMenu = () => {
-  const t = useTranslations('Header');
   const [isVisible, setIsVisible] = useState(false);
   const [spring] = useSpring(() => mobileMenuAnimation(isVisible), [isVisible]);
+
+  const asdf = 'asd';
 
   return (
     <div className="">
@@ -41,13 +42,14 @@ export const MobileMenu = () => {
               <XMarkIcon className="h-6 w-6" />
             </button>
           </div>
-          {navLinks.map(({ key, link, icon: Icon }) => (
-            <Link href={link} className="flex items-center space-x-3" key={key}>
-              <span className="w-6 h-6 text-accent">
-                <Icon />
-              </span>
-              <span className="text-neutral">{t(key)}</span>
-            </Link>
+          {navLinks.map(({ i18nKey, link, icon, disabled }) => (
+            <NavigationLink
+              key={i18nKey}
+              i18nKey={i18nKey}
+              link={link}
+              icon={icon}
+              disabled={disabled}
+            />
           ))}
         </div>
         <div className="divider my-0" />
