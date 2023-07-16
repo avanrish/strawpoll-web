@@ -9,27 +9,29 @@ import { IMobileUpperSectionProps } from '@/src/components/Header/types';
 
 export const MobileUpperSection = ({ closeMenu }: IMobileUpperSectionProps) => {
   return (
-    <div className="px-5 pt-5 pb-6 space-y-6">
+    <div className="px-2 pt-5 pb-3 space-y-3">
       <div className="flex justify-between items-center">
-        <Link href={Routes.Home}>
+        <Link href={Routes.Home} className="px-3">
           <Logo className="text-neutral h-6" />
         </Link>
         <button
-          className="-mr-2 text-gray-400 hover:bg-base-200 p-2 rounded-md focus:ring-2 focus:ring-primary transition-all"
+          className="text-gray-400 hover:bg-base-200 p-2 rounded-md focus:ring-2 focus:ring-primary transition-all mr-1"
           onClick={closeMenu}
         >
           <XMarkIcon className="h-6 w-6" />
         </button>
       </div>
-      {navLinks.map(({ i18nKey, link, icon, disabled }) => (
-        <NavigationLink
-          key={i18nKey}
-          i18nKey={i18nKey}
-          link={link}
-          icon={icon}
-          disabled={disabled}
-        />
-      ))}
+      <div>
+        {navLinks.map(({ i18nKey, link, icon, disabled }) => (
+          <NavigationLink
+            key={i18nKey}
+            i18nKey={i18nKey}
+            link={link}
+            icon={icon}
+            disabled={disabled}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -6,6 +6,14 @@
     "createPoll": "Create Poll",
     "scheduleMeeting": "Schedule Meeting",
     "demo": "Demo",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "helpCenter": "Help Center",
+    "guides": "Guides",
+    "liveDemo": "Live Demo",
+    "faq":  "F.A.Q.",
+    "pollApi": "Poll API",
+    "about":  "About",
+    "signUp": "Sign up",
+    "existingUser": "Existing user? <link>Login</link>"
   }
 }

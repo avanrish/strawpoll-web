@@ -18,7 +18,7 @@ export const navLinks: NavLink[] = [
     i18nKey: 'createPoll',
     link: Routes.CreatePoll,
     icon: ChartBarIcon,
-    disabled: false,
+    disabled: true,
   },
   {
     i18nKey: 'scheduleMeeting',
@@ -40,4 +40,35 @@ export const navLinks: NavLink[] = [
   },
 ];
 
-export const additionalMobileMenuLinks: Omit<NavLink, 'icon'>[] = [];
+export const additionalMobileMenuLinks: Omit<NavLink, 'icon'>[] = [
+  {
+    i18nKey: 'helpCenter',
+    link: '#',
+    disabled: true,
+  },
+  {
+    i18nKey: 'guides',
+    link: '#',
+    disabled: true,
+  },
+  {
+    i18nKey: 'liveDemo',
+    link: '#',
+    disabled: true,
+  },
+  {
+    i18nKey: 'faq',
+    link: '#',
+    disabled: true,
+  },
+  {
+    i18nKey: 'pollApi',
+    link: '#',
+    disabled: true,
+  },
+  {
+    i18nKey: 'about',
+    link: '#',
+    disabled: true,
+  },
+];

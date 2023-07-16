@@ -14,7 +14,7 @@ export const NavigationLink = ({
   return (
     <Link
       href={link}
-      className="flex items-center space-x-3 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed"
+      className="flex items-center space-x-3 p-3 rounded-md hover:bg-gray-50 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
       aria-disabled={disabled}
     >
       <span className="w-6 h-6 text-accent">
