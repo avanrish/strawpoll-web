@@ -13,6 +13,7 @@
     "faq":  "F.A.Q.",
     "pollApi": "Poll API",
     "about":  "About",
+    "login": "Login",
     "signUp": "Sign up",
     "existingUser": "Existing user? <link>Login</link>"
   }
