@@ -5,15 +5,15 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import { animated, useSpring } from '@react-spring/web';
 
 import { mobileMenuAnimation } from '@/src/utils/animations/mobileMenu';
-import { MobileUpperSection } from '@/src/components/Header/MobileUpperSection';
-import { MobileLowerSection } from '@/src/components/Header/MobileLowerSection';
+import { MobileUpperSection } from '@/src/components/Header/MobileMenu/MobileUpperSection';
+import { MobileLowerSection } from '@/src/components/Header/MobileMenu/MobileLowerSection';
 
 export const MobileMenu = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [spring] = useSpring(() => mobileMenuAnimation(isVisible), [isVisible]);
 
   return (
-    <div>
+    <div className="max-lg:ml-auto">
       <button
         className="p-2 rounded-md text-gray-400 hover:bg-base-200 transition-all focus:ring-2 focus:ring-primary lg:hidden"
         onClick={() => setIsVisible(true)}

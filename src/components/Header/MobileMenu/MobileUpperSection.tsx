@@ -1,4 +1,5 @@
 import Link from 'next-intl/link';
+import { useTranslations } from 'next-intl';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 import { Routes } from '@/src/utils/enums/routes';
@@ -8,6 +9,7 @@ import { NavigationLink } from '@/src/components/Header/NavigationLink';
 import { IMobileUpperSectionProps } from '@/src/components/Header/types';
 
 export const MobileUpperSection = ({ closeMenu }: IMobileUpperSectionProps) => {
+  const t = useTranslations('Header');
   return (
     <div className="px-2 pt-5 pb-3 space-y-3">
       <div className="flex justify-between items-center">
@@ -25,10 +27,11 @@ export const MobileUpperSection = ({ closeMenu }: IMobileUpperSectionProps) => {
         {navLinks.map(({ i18nKey, link, icon, disabled }) => (
           <NavigationLink
             key={i18nKey}
-            i18nKey={i18nKey}
+            text={t(i18nKey)}
             link={link}
             icon={icon}
             disabled={disabled}
+            isMobile={true}
           />
         ))}
       </div>

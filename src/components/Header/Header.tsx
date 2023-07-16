@@ -9,7 +9,7 @@ import pick from 'lodash/pick';
 
 import { Logo } from '@/src/components/Logo/Logo';
 import { Routes } from '@/src/utils/enums/routes';
-import { MobileMenu } from '@/src/components/Header/MobileMenu';
+import { MobileMenu } from '@/src/components/Header/MobileMenu/MobileMenu';
 
 export const Header = () => {
   const locale = useLocale();
