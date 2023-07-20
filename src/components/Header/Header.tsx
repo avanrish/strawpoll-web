@@ -7,7 +7,7 @@ import {
 } from 'next-intl';
 import pick from 'lodash/pick';
 
-import { Logo } from '@/src/components/Logo/Logo';
+import { Logo } from '@/src/components/Logo';
 import { Routes } from '@/src/utils/enums/routes';
 import { MobileMenu } from '@/src/components/Header/MobileMenu/MobileMenu';
 import { DesktopMenu } from '@/src/components/Header/DesktopMenu';

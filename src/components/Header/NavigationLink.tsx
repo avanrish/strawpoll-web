@@ -1,6 +1,6 @@
 import Link from 'next-intl/link';
 
-import { INavigationLinkProps } from '@/src/components/Header/types';
+import { INavigationLinkProps } from '@/src/types/Header.types';
 
 export const NavigationLink = ({
   link,

@@ -3,10 +3,10 @@ import { useTranslations } from 'next-intl';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 import { Routes } from '@/src/utils/enums/routes';
-import { Logo } from '@/src/components/Logo/Logo';
+import { Logo } from '@/src/components/Logo';
 import { navLinks } from '@/src/utils/fixtures/navLinks';
 import { NavigationLink } from '@/src/components/Header/NavigationLink';
-import { IMobileUpperSectionProps } from '@/src/components/Header/types';
+import { IMobileUpperSectionProps } from '@/src/types/Header.types';
 
 export const MobileUpperSection = ({ closeMenu }: IMobileUpperSectionProps) => {
   const t = useTranslations('Header');
