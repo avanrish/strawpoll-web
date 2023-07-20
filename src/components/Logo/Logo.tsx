@@ -1,4 +1,4 @@
-import { ILogoProps } from '@/src/components/Logo/types';
+import { ILogoProps } from '@/src/types/Logo.types';
 
 export const Logo = ({ className }: ILogoProps) => {
   return (
