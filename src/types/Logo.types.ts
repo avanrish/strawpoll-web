@@ -1,3 +1,3 @@
-export interface ILogoProps {
+export interface LogoProps {
   className?: string;
 }

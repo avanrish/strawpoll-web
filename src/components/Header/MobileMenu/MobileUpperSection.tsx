@@ -6,9 +6,9 @@ import { Routes } from '@/src/utils/enums/routes';
 import { Logo } from '@/src/components/Logo';
 import { navLinks } from '@/src/utils/fixtures/navLinks';
 import { NavigationLink } from '@/src/components/Header/NavigationLink';
-import { IMobileUpperSectionProps } from '@/src/types/Header.types';
+import { MobileUpperSectionProps } from '@/src/types/Header.types';
 
-export const MobileUpperSection = ({ closeMenu }: IMobileUpperSectionProps) => {
+export const MobileUpperSection = ({ closeMenu }: MobileUpperSectionProps) => {
   const t = useTranslations('Header');
   return (
     <div className="px-2 pt-5 pb-3 space-y-3">

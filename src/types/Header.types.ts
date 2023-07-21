@@ -1,10 +1,10 @@
 import { Routes } from '@/src/utils/enums/routes';
 
-export interface IMobileUpperSectionProps {
+export interface MobileUpperSectionProps {
   closeMenu: () => void;
 }
 
-export interface INavigationLinkProps {
+export interface NavigationLinkProps {
   link: Routes | '#';
   text: string;
   icon?: any;

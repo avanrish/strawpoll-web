@@ -1,6 +1,6 @@
 import Link from 'next-intl/link';
 
-import { INavigationLinkProps } from '@/src/types/Header.types';
+import { NavigationLinkProps } from '@/src/types/Header.types';
 
 export const NavigationLink = ({
   link,
@@ -8,7 +8,7 @@ export const NavigationLink = ({
   icon: Icon,
   disabled,
   isMobile,
-}: INavigationLinkProps) => {
+}: NavigationLinkProps) => {
   return (
     <Link
       href={link}

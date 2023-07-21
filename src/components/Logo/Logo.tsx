@@ -1,6 +1,6 @@
-import { ILogoProps } from '@/src/types/Logo.types';
+import { LogoProps } from '@/src/types/Logo.types';
 
-export const Logo = ({ className }: ILogoProps) => {
+export const Logo = ({ className }: LogoProps) => {
   return (
     <svg
       className={className}
