@@ -1,11 +1,14 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslator } from 'next-intl/server';
+import { useLocale } from 'next-intl';
 import Link from 'next-intl/link';
 
 import { navLinks } from '@/src/utils/fixtures/navLinks';
 import { NavigationLink } from '@/src/components/Header/NavigationLink';
 
 export const DesktopMenu = async () => {
-  const t = await getTranslations('Header');
+  const locale = useLocale();
+  const t = await getTranslator(locale, 'Header');
+
   return (
     <div className="hidden lg:flex lg:w-full ml-8 justify-between h-full">
       <div className="flex space-x-8">

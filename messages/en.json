@@ -1,6 +1,10 @@
 {
   "Index": {
-    "helloWorld": "Hello World!"
+    "metadata": {
+      "title": "StrawPoll: Create your poll in seconds",
+      "description": "Making it easy to create instant, real-time polls and surveys for free. StrawPoll is the simplest way to create instant, real-time polls for free.",
+      "siteName": "StrawPoll"
+    }
   },
   "Header": {
     "createPoll": "Create Poll",
