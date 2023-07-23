@@ -19,13 +19,6 @@ export async function generateMetadata({
       title: t('metadata.title'),
       description: t('metadata.description'),
       siteName: t('metadata.siteName'),
-      images: [
-        {
-          url: 'https://cdn.strawpoll.com/images/logos/strawpoll-logo-title-splash.png',
-          width: 1200,
-          height: 630,
-        },
-      ],
     },
   };
 }

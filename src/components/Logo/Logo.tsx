@@ -7,7 +7,6 @@ export const Logo = ({ className }: LogoProps) => {
       viewBox="0 0 482 74"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>StrawPoll</title>
       <path
         id="Pfad"
         fill="currentColor"
