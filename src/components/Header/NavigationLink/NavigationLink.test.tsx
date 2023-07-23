@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import { NavigationLink } from '../NavigationLink';
+import { NavigationLink } from './NavigationLink';
 import { Routes } from '@/src/utils/enums/routes';
 
 jest.mock('next-intl/link', () => ({
