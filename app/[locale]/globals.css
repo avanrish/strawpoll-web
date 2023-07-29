@@ -22,7 +22,7 @@
         @apply px-1 pt-1 border-b-2 border-transparent hover:border-gray-300;
     }
     .navlink.desktop:hover span {
-        @apply text-gray-300;
+        @apply dark:text-gray-300;
     }
 }
 
