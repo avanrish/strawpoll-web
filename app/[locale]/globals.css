@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer components {
+    .btn {
+        @apply block font-medium text-center px-4 py-2 rounded-md border border-transparent;
+    }
+    .btn.primary {
+        @apply text-white bg-indigo-600 hover:bg-indigo-700;
+    }
+    .btn.secondary {
+        @apply text-white bg-indigo-500 hover:bg-indigo-600;
+    }
     .navlink {
         @apply font-medium flex items-center aria-disabled:opacity-50 aria-disabled:pointer-events-none;
     }
@@ -12,9 +21,5 @@
     .navlink.desktop{
         @apply px-1 pt-1 border-b-2 border-transparent hover:border-gray-300;
     }
-}
-
-.btn {
-    @apply min-h-[2.625rem] h-[2.625rem] normal-case font-normal text-base
 }
 

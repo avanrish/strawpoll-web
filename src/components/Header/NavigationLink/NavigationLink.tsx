@@ -16,13 +16,13 @@ export const NavigationLink = ({
       aria-disabled={disabled}
     >
       {Icon ? (
-        <span className="w-6 h-6 text-accent">
+        <span className="w-6 h-6 text-indigo-400">
           <Icon />
         </span>
       ) : null}
       <span
-        className={`text-neutral ${
-          isMobile ? '' : 'lg:text-base-300 lg:text-sm'
+        className={`text-gray-900 ${
+          isMobile ? '' : 'lg:text-gray-700 lg:text-sm'
         }`}
       >
         {text}

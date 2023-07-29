@@ -14,10 +14,10 @@ export const MobileUpperSection = ({ closeMenu }: MobileUpperSectionProps) => {
     <div className="px-2 pt-5 pb-3 space-y-3">
       <div className="flex justify-between items-center">
         <Link href={Routes.Home} className="px-3">
-          <Logo className="text-neutral h-6" />
+          <Logo className="text-gray-900 h-6" />
         </Link>
         <button
-          className="text-gray-400 hover:bg-base-200 p-2 rounded-md focus:ring-2 focus:ring-primary transition-all mr-1"
+          className="text-gray-400 hover:bg-gray-100 p-2 rounded-md focus:ring-2 focus:ring-indigo-500 transition-all mr-1"
           onClick={closeMenu}
         >
           <XMarkIcon className="h-6 w-6" />

@@ -11,7 +11,7 @@ export function MobileLowerSection() {
       <div className="grid grid-cols-2 gap-x-8 gap-y-4">
         {additionalMobileMenuLinks.map(({ link, i18nKey, disabled }) => (
           <Link
-            className="text-neutral font-medium hover:text-base-300 aria-disabled:pointer-events-none aria-disabled:opacity-50"
+            className="text-gray-900 font-medium hover:text-gray-700 aria-disabled:pointer-events-none aria-disabled:opacity-50"
             href={link}
             key={i18nKey}
             aria-disabled={disabled}
@@ -22,17 +22,17 @@ export function MobileLowerSection() {
       </div>
       <Link
         href="#"
-        className="btn font-medium w-full text-white bg-indigo-500 hover:bg-indigo-600 aria-disabled:pointer-events-none aria-disabled:opacity-50"
+        className="btn secondary w-full text-white aria-disabled:pointer-events-none aria-disabled:opacity-50"
         aria-disabled
       >
         {t('signUp')}
       </Link>
-      <div className="text-center font-medium">
+      <div className="text-center font-medium text-gray-500">
         {t.rich('existingUser', {
           link: (chunks) => (
             <Link
               href="#"
-              className="text-primary hover:text-indigo-500 aria-disabled:pointer-events-none aria-disabled:opacity-50"
+              className="text-indigo-600 hover:text-indigo-500 aria-disabled:pointer-events-none aria-disabled:opacity-50"
               aria-disabled
             >
               {chunks}
