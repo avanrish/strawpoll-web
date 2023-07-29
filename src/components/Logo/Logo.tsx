@@ -1,4 +1,4 @@
-import { LogoProps } from '@/src/types/Logo.types';
+import { LogoProps } from './Logo.type';
 
 export const Logo = ({ className }: LogoProps) => {
   return (

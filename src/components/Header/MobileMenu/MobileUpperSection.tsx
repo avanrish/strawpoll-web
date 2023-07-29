@@ -6,7 +6,8 @@ import { Routes } from '@/src/utils/enums/routes';
 import { Logo } from '@/src/components/Logo';
 import { navLinks } from '@/src/utils/fixtures/navLinks';
 import { NavigationLink } from '@/src/components/Header/NavigationLink';
-import { MobileUpperSectionProps } from '@/src/types/Header.types';
+
+import { MobileUpperSectionProps } from './MobileUpperSection.type';
 
 export const MobileUpperSection = ({ closeMenu }: MobileUpperSectionProps) => {
   const t = useTranslations('Header');
