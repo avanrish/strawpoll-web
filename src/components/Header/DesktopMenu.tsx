@@ -25,15 +25,15 @@ export const DesktopMenu = async () => {
       <div className="flex items-center ml-auto text-sm space-x-3">
         <Link
           href="#"
-          className="btn text-gray-600 hover:text-indigo-500 px-4 aria-disabled:pointer-events-none aria-disabled:opacity-50"
-          // aria-disabled
+          className="btn text-gray-600 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 px-4 aria-disabled:pointer-events-none aria-disabled:opacity-50"
+          aria-disabled
         >
           {t('login')}
         </Link>
         <Link
           href="#"
           className="btn primary text-sm aria-disabled:pointer-events-none aria-disabled:opacity-50"
-          // aria-disabled
+          aria-disabled
         >
           {t('signUp')}
         </Link>

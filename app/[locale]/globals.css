@@ -7,7 +7,7 @@
         @apply block font-medium text-center px-4 py-2 rounded-md border border-transparent;
     }
     .btn.primary {
-        @apply text-white bg-indigo-600 hover:bg-indigo-700;
+        @apply text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600;
     }
     .btn.secondary {
         @apply text-white bg-indigo-500 hover:bg-indigo-600;
@@ -16,10 +16,13 @@
         @apply font-medium flex items-center aria-disabled:opacity-50 aria-disabled:pointer-events-none;
     }
     .navlink.mobile {
-        @apply space-x-3 p-3 rounded-md hover:bg-gray-50;
+        @apply space-x-3 p-3 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700/50
     }
     .navlink.desktop{
         @apply px-1 pt-1 border-b-2 border-transparent hover:border-gray-300;
+    }
+    .navlink.desktop:hover span {
+        @apply text-gray-300;
     }
 }
 
