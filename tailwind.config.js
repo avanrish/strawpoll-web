@@ -7,4 +7,5 @@ module.exports = {
       DEFAULT: '250ms',
     },
   },
+  plugins: [require('@headlessui/tailwindcss')({ prefix: 'ui' })],
 };
