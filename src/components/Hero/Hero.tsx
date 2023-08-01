@@ -13,7 +13,7 @@ export const Hero = () => {
           <span className="block">Create your poll</span>
           <span className="block">in seconds</span>
         </h1>
-        <p className="mt-6 text-center text-base">
+        <p className="mt-6 text-center text-lg">
           Want to ask your friends where to go friday night or arrange a meeting
           with co-workers? Create a poll - and get answers in no time.
         </p>

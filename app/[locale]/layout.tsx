@@ -1,4 +1,3 @@
-import { Inter } from 'next/font/google';
 import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { cookies } from 'next/headers';
@@ -7,8 +6,6 @@ import { Header } from '@/src/components/Header/Header';
 
 import './globals.css';
 import { Themes } from '@/src/utils/enums/themes';
-
-const inter = Inter({ subsets: ['latin'] });
 
 interface IRootLayoutProps {
   children: React.ReactNode;
@@ -23,7 +20,7 @@ export default function RootLayout({ children, params }: IRootLayoutProps) {
     notFound();
   }
 
-  const classNames = [inter.className];
+  const classNames = ['antialiased'];
   if (themeCookie?.value === Themes.Dark) classNames.push(themeCookie.value);
 
   return (
