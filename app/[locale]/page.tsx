@@ -6,12 +6,14 @@ import { MetadataPropsWithLocale } from '@/src/types/common';
 import { ThemeSwitch } from '@/src/components/ThemeSwitch';
 import { themeCookieKey } from '@/src/utils/fixtures/config';
 import { Themes } from '@/src/utils/enums/themes';
+import { Hero } from '@/src/components/Hero';
 
 export default async function Home() {
   const theme = cookies().get(themeCookieKey);
 
   return (
     <div>
+      <Hero />
       <ThemeSwitch defaultEnabled={theme?.value === Themes.Dark} />
     </div>
   );
