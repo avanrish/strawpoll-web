@@ -21,7 +21,7 @@ export const MobileMenu = () => {
         <Bars3Icon className="h-6 w-6" />
       </button>
       <animated.div
-        className="fixed inset-0 max-w-full bg-white dark:bg-gray-900 h-fit m-2 rounded-md ring-1 ring-gray-300 dark:ring-gray-700 z-[1] divide-y-2 divide-gray-50 dark:divide-gray-700 shadow-lg"
+        className="fixed inset-0 max-w-full bg-white dark:bg-gray-900 h-fit m-2 rounded-md ring-1 ring-gray-300 dark:ring-gray-700 z-10 divide-y-2 divide-gray-50 dark:divide-gray-700 shadow-lg"
         style={spring}
       >
         <MobileUpperSection closeMenu={() => setIsVisible(false)} />
