@@ -12,10 +12,10 @@ export default async function Home() {
   const theme = cookies().get(themeCookieKey);
 
   return (
-    <div>
+    <>
       <Hero />
       <ThemeSwitch defaultEnabled={theme?.value === Themes.Dark} />
-    </div>
+    </>
   );
 }
 

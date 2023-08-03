@@ -8,32 +8,45 @@ export const Hero = () => {
   const t = useTranslations('Hero');
 
   return (
-    <div className="relative">
-      <div className="absolute w-full h-full -z-[1]">
-        <Image
-          src="/images/hero-background.jpg"
-          alt={t('imageAlt')}
-          style={{ objectFit: 'cover' }}
-          fill
-        />
-        <div className="w-full h-full absolute bg-gradient-to-r from-purple-800 to-indigo-700 dark:from-indigo-400 dark:to-indigo-400 mix-blend-multiply" />
-      </div>
-      <div className="py-16 px-4">
-        <h1 className="text-4xl font-extrabold tracking-tight text-center">
-          <span className="block text-white">{t('titlePart1')}</span>
-          <span className="block text-indigo-300">{t('titlePart2')}</span>
-        </h1>
-        <p className="mt-6 text-center text-lg text-indigo-200">
-          {t('description')}
-        </p>
-        <div className="mt-10 flex flex-col gap-y-6">
-          {/* TODO: Disable links */}
-          <Link className="btn primary py-3" href={Routes.CreatePoll}>
-            {t('createAPoll')}
-          </Link>
-          <Link className="btn bg-white py-3 text-gray-900" href="#">
-            {t('viewExamples')}
-          </Link>
+    <div className="sm:pt-8 bg-gray-100">
+      <div className="sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="shadow-xl relative">
+          <div className="absolute w-full h-full">
+            <Image
+              src="/images/hero-background.jpg"
+              alt={t('imageAlt')}
+              style={{ objectFit: 'cover' }}
+              className="sm:rounded-2xl"
+              fill
+            />
+            <div className="w-full h-full absolute bg-gradient-to-r from-purple-800 to-indigo-700 dark:from-indigo-400 dark:to-indigo-400 mix-blend-multiply sm:rounded-2xl" />
+          </div>
+          <div className="relative py-16 px-4 sm:px-6 sm:py-24 lg:pt-28 lg:pb-32">
+            <h1 className="text-4xl font-extrabold tracking-tight text-center sm:text-left sm:ml-12 sm:text-5xl lg:text-6xl lg:ml-14">
+              <span className="block text-white">{t('titlePart1')}</span>
+              <span className="block text-indigo-300">{t('titlePart2')}</span>
+            </h1>
+            <p className="mt-6 text-center text-lg text-indigo-200 mx-auto max-w-sm sm:text-left sm:ml-12 sm:text-xl sm:max-w-2xl lg:ml-14">
+              {t('description')}
+            </p>
+            <div className="mt-10 flex mx-auto max-w-sm sm:max-w-none">
+              <div className="max-sm:w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:ml-12 lg:ml-14">
+                {/* TODO: Disable links */}
+                <Link
+                  className="btn primary py-3 sm:px-8"
+                  href={Routes.CreatePoll}
+                >
+                  {t('createAPoll')}
+                </Link>
+                <Link
+                  className="btn bg-white py-3 text-gray-900 sm:px-8"
+                  href="#"
+                >
+                  {t('viewExamples')}
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
