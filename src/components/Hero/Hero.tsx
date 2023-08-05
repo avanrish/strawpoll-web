@@ -8,7 +8,7 @@ export const Hero = () => {
   const t = useTranslations('Hero');
 
   return (
-    <div className="sm:pt-8 bg-gray-100">
+    <div className="sm:pt-8 bg-gray-100 dark:bg-gray-900">
       <div className="sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="shadow-xl relative">
           <div className="absolute w-full h-full">
@@ -31,16 +31,17 @@ export const Hero = () => {
             </p>
             <div className="mt-10 flex mx-auto max-w-sm sm:max-w-none">
               <div className="max-sm:w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:ml-12 lg:ml-14">
-                {/* TODO: Disable links */}
                 <Link
-                  className="btn primary py-3 sm:px-8"
+                  className="btn primary py-3 sm:px-8 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
                   href={Routes.CreatePoll}
+                  aria-disabled
                 >
                   {t('createAPoll')}
                 </Link>
                 <Link
-                  className="btn bg-white py-3 text-gray-900 sm:px-8"
+                  className="btn bg-white py-3 text-gray-900 sm:px-8 dark:bg-gray-700 dark:text-gray-200 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
                   href="#"
+                  aria-disabled
                 >
                   {t('viewExamples')}
                 </Link>
