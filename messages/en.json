@@ -14,19 +14,27 @@
     "helpCenter": "Help Center",
     "guides": "Guides",
     "liveDemo": "Live Demo",
-    "faq":  "F.A.Q.",
+    "faq": "F.A.Q.",
     "pollApi": "Poll API",
-    "about":  "About",
+    "about": "About",
     "login": "Login",
     "signUp": "Sign up",
     "existingUser": "Existing user? <link>Login</link>"
   },
   "Hero": {
-    "imageAlt": "Splash image",
-    "titlePart1": "Create your poll",
-    "titlePart2": "in seconds",
-    "description": "Want to ask your friends where to go friday night or arrange a meeting with co-workers? Create a poll - and get answers in no time.",
-    "createAPoll": "Create a poll",
-    "viewExamples": "View examples"
+    "Main": {
+      "imageAlt": "Splash image",
+      "titlePart1": "Create your poll",
+      "titlePart2": "in seconds",
+      "description": "Want to ask your friends where to go friday night or arrange a meeting with co-workers? Create a poll - and get answers in no time.",
+      "createAPoll": "Create a poll",
+      "viewExamples": "View examples"
+    },
+    "Stats": {
+      "title": "Trusted by over 500,000 users worldwide",
+      "polls": "Polls",
+      "votes": "Votes",
+      "users": "Users"
+    }
   }
 }
