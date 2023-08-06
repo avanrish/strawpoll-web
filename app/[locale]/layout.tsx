@@ -2,10 +2,10 @@ import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { cookies } from 'next/headers';
 
-import { Header } from '@/src/components/Header/Header';
+import { Header } from '@/src/components/Header';
+import { Themes } from '@/src/utils/enums/themes';
 
 import './globals.css';
-import { Themes } from '@/src/utils/enums/themes';
 
 interface IRootLayoutProps {
   children: React.ReactNode;
