@@ -10,13 +10,13 @@ export const FeatureSection = () => {
       {features.map((feat, i) => (
         <Feature
           icon={feat.icon}
-          key={feat.title}
-          title={t(feat.title)}
-          description={t(feat.description)}
+          key={`${feat.which}.title`}
+          title={t(`${feat.which}.title`)}
+          description={t(`${feat.which}.description`)}
           lightImage={feat.lightImage}
           darkImage={feat.darkImage}
-          link1={{ ...feat.link1, label: t(feat.link1.label) }}
-          link2={{ ...feat.link2, label: t(feat.link2.label) }}
+          link1={{ label: t(`${feat.which}.link1.label`), url: feat.link1 }}
+          link2={{ label: t(`${feat.which}.link2.label`), url: feat.link2 }}
           reverse={i % 2 === 1}
         />
       ))}

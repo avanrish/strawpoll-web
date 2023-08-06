@@ -9,7 +9,7 @@ import {
 export type NavLink = {
   i18nKey: keyof IntlMessages['Header'];
   link: Routes | '#';
-  icon: any;
+  icon: typeof CalendarIcon;
   disabled?: boolean;
 };
 

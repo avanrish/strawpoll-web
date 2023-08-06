@@ -3,8 +3,8 @@ interface HeroStatistics {
   value: string;
 }
 
-export const heroStatistics = [
+export const heroStatistics: HeroStatistics[] = [
   { label: 'users', value: '500k+' },
   { label: 'polls', value: '6.5M+' },
   { label: 'votes', value: '190M+' },
-] as unknown as HeroStatistics[];
+];

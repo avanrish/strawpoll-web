@@ -8,50 +8,29 @@ import lightMeetingScheduler from '@/src/utils/assets/meeting-scheduler-light.pn
 import darkMeetingScheduler from '@/src/utils/assets/meeting-scheduler-dark.png';
 
 export interface Feature {
-  icon: React.FC<React.ComponentProps<'svg'>>;
-  title: any;
-  description: any;
+  icon: typeof CalendarIcon;
   lightImage: StaticImageData;
   darkImage: StaticImageData;
-  link1: {
-    label: any;
-    url: string;
-  };
-  link2: {
-    label: any;
-    url: string;
-  };
+  link1: string | Routes;
+  link2: string | Routes;
+  which: keyof IntlMessages['FeatureSection'];
 }
 
-export const features = [
+export const features: Feature[] = [
   {
     icon: ChartPieIcon,
-    title: 'first.title',
-    description: 'first.description',
     lightImage: lightPollMaker,
     darkImage: darkPollMaker,
-    link1: {
-      label: 'first.link1.label',
-      url: Routes.CreatePoll,
-    },
-    link2: {
-      label: 'first.link2.label',
-      url: '#',
-    },
+    link1: Routes.CreatePoll,
+    link2: '#',
+    which: 'first',
   },
   {
     icon: CalendarIcon,
-    title: 'second.title',
-    description: 'second.description',
     lightImage: lightMeetingScheduler,
     darkImage: darkMeetingScheduler,
-    link1: {
-      label: 'second.link1.label',
-      url: '#',
-    },
-    link2: {
-      label: 'second.link2.label',
-      url: '#',
-    },
+    link1: '#',
+    link2: '#',
+    which: 'second',
   },
-] as unknown as Feature[];
+];
