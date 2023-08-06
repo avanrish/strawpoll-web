@@ -39,7 +39,7 @@ export const HeroMain = () => {
                   {t('createAPoll')}
                 </Link>
                 <Link
-                  className="btn bg-white py-3 text-gray-900 sm:px-8 dark:bg-gray-700 dark:text-gray-200 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
+                  className="btn bg-white py-3 text-gray-900 sm:px-8 dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
                   href="#"
                   aria-disabled
                 >

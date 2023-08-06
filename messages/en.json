@@ -36,5 +36,27 @@
       "votes": "Votes",
       "users": "Users"
     }
+  },
+  "FeatureSection": {
+    "first": {
+      "title": "Use our advanced poll maker",
+      "description": "A straw poll is a voting that can be used to help people to easily determine the opinion of a group or the public on some issue. Straw polls are very useful when only the majority opinion is important and not the opinion of each individual participant.",
+      "link1": {
+        "label": "Create a poll"
+      },
+      "link2": {
+        "label": "View example"
+      }
+    },
+    "second": {
+      "title": "Schedule your meetings in no-time",
+      "description": "StrawPoll Meetings is a great and simple tool to schedule meetings and other times with clients, colleagues or friends. A meeting poll is very helpful in situations where the opinion of each individual participant is important.",
+      "link1": {
+        "label": "Schedule a meeting"
+      },
+      "link2": {
+        "label": "View example"
+      }
+    }
   }
 }
