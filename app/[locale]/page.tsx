@@ -4,7 +4,7 @@ import { cookies } from 'next/headers';
 
 import { MetadataPropsWithLocale } from '@/src/types/common';
 import { ThemeSwitch } from '@/src/components/ThemeSwitch';
-import { themeCookieKey } from '@/src/utils/fixtures/config';
+import { appUrl, themeCookieKey } from '@/src/utils/fixtures/config';
 import { Themes } from '@/src/utils/enums/themes';
 import { Hero } from '@/src/components/Hero';
 import { FeatureSection } from '@/src/components/Feature';
@@ -34,5 +34,6 @@ export async function generateMetadata({
       description: t('metadata.description'),
       siteName: t('metadata.siteName'),
     },
+    metadataBase: new URL(appUrl),
   };
 }
