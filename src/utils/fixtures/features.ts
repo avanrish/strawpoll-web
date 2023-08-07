@@ -1,11 +1,11 @@
 import { StaticImageData } from 'next/dist/shared/lib/get-img-props';
 import { CalendarIcon, ChartPieIcon } from '@heroicons/react/24/outline';
 
-import lightPollMaker from '@/src/utils/assets/poll-maker-light.png';
-import darkPollMaker from '@/src/utils/assets/poll-maker-dark.png';
+import lightPollMaker from '@/src/assets/poll-maker-light.png';
+import darkPollMaker from '@/src/assets/poll-maker-dark.png';
 import { Routes } from '@/src/utils/enums/routes';
-import lightMeetingScheduler from '@/src/utils/assets/meeting-scheduler-light.png';
-import darkMeetingScheduler from '@/src/utils/assets/meeting-scheduler-dark.png';
+import lightMeetingScheduler from '@/src/assets/meeting-scheduler-light.png';
+import darkMeetingScheduler from '@/src/assets/meeting-scheduler-dark.png';
 
 export interface Feature {
   icon: typeof CalendarIcon;
