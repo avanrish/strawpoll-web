@@ -16,7 +16,7 @@ export const ThemeSwitch = ({ defaultEnabled }: ThemeSwitchProps) => {
   const handleChange = async (checked: boolean) => {
     setEnabled(checked);
     document.body.classList.toggle(Themes.Dark);
-    await axiosNext('/api/change-theme', {
+    await axiosNext('/change-theme', {
       params: { [themeCookieKey]: checked ? Themes.Dark : Themes.Light },
     });
   };
