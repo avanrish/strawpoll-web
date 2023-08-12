@@ -4,7 +4,7 @@
 
 @layer components {
     .btn {
-        @apply inline-flex px-4 font-medium text-center py-2 rounded-md border border-transparent items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800;
+        @apply inline-flex px-4 font-medium text-center py-2 rounded-md border border-transparent items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 transition-all;
     }
     .btn.primary {
         @apply text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600;
