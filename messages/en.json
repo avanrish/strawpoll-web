@@ -57,6 +57,32 @@
       "link2": {
         "label": "View example"
       }
+    },
+    "features": {
+      "fakeDetection": {
+        "title": "Fake Detection",
+        "description": "By default, bots and VPN users are blocked from voting on straw polls."
+      },
+      "deadlines": {
+        "title": "Deadlines",
+        "description": "Our polls run indefinitely. You can change that by setting a deadline."
+      },
+      "emojiSupport": {
+        "title": "Emoji Support",
+        "description": "We support all Emojis natively. Feel free to use as many as you want!"
+      },
+      "liveResults": {
+        "title": "Live Results",
+        "description": "Evaluate your poll results in a pie chart or bar graph in real-time."
+      },
+      "api": {
+        "title": "Poll API",
+        "description": "We provide an easy to use API for poll creation and result analysis."
+      },
+      "activeDevelopment": {
+        "title": "Active Development",
+        "description": "We are continuously working on additional features and QoL updates."
+      }
     }
   }
 }

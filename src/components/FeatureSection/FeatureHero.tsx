@@ -1,7 +1,7 @@
 import Link from 'next-intl/link';
 import Image from 'next/image';
 
-import { FeatureProps } from '@/src/components/FeatureSection/FeatureHero.type';
+import { FeatureHeroProps } from '@/src/components/FeatureSection/FeatureHero.type';
 
 export const FeatureHero = ({
   icon: Icon,
@@ -12,7 +12,7 @@ export const FeatureHero = ({
   link1,
   link2,
   reverse,
-}: FeatureProps) => {
+}: FeatureHeroProps) => {
   return (
     <div className="lg:grid lg:grid-cols-2 lg:px-8 lg:grid-flow-col-dense lg:gap-24 lg:mx-auto lg:max-w-7xl">
       <div className="px-4 mx-auto my-auto max-w-xl sm:px-6 lg:px-0 lg:py-16">

@@ -3,7 +3,7 @@ import { StaticImageData } from 'next/dist/shared/lib/get-img-props';
 import { Routes } from '@/src/utils/enums/routes';
 import { HeroIcon } from '@/src/types/common';
 
-export interface FeatureProps {
+export interface FeatureHeroProps {
   icon: HeroIcon;
   title: string;
   description: string;
