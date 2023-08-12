@@ -1,11 +1,10 @@
-import { CalendarIcon } from '@heroicons/react/24/outline';
-
 import { Routes } from '@/src/utils/enums/routes';
+import { HeroIcon } from '@/src/types/common';
 
 export interface NavigationLinkProps {
   link: Routes | '#';
   text: string;
-  icon?: typeof CalendarIcon;
+  icon?: HeroIcon;
   disabled?: boolean;
   isMobile: boolean;
 }

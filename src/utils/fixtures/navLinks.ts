@@ -5,11 +5,12 @@ import {
   CreditCardIcon,
   CursorArrowRaysIcon,
 } from '@heroicons/react/24/outline';
+import { HeroIcon } from '@/src/types/common';
 
 export type NavLink = {
   i18nKey: keyof IntlMessages['Header'];
   link: Routes | '#';
-  icon: typeof CalendarIcon;
+  icon: HeroIcon;
   disabled?: boolean;
 };
 

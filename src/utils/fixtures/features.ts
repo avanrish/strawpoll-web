@@ -6,9 +6,10 @@ import darkPollMaker from '@/src/assets/poll-maker-dark.png';
 import { Routes } from '@/src/utils/enums/routes';
 import lightMeetingScheduler from '@/src/assets/meeting-scheduler-light.png';
 import darkMeetingScheduler from '@/src/assets/meeting-scheduler-dark.png';
+import { HeroIcon } from '@/src/types/common';
 
 export interface Feature {
-  icon: typeof CalendarIcon;
+  icon: HeroIcon;
   lightImage: StaticImageData;
   darkImage: StaticImageData;
   link1: string | Routes;
