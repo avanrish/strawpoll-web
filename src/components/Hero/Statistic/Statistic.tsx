@@ -1,4 +1,4 @@
-import { StatisticProps } from '@/src/components/Hero/Statistic.type';
+import { StatisticProps } from '@/src/components/Hero/Statistic/Statistic.type';
 
 export const Statistic = ({ label, value }: StatisticProps) => {
   return (
