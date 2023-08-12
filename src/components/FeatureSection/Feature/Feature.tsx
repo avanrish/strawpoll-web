@@ -1,4 +1,4 @@
-import { FeatureProps } from '@/src/components/FeatureSection/Feature.type';
+import { FeatureProps } from '@/src/components/FeatureSection/Feature/Feature.type';
 
 export const Feature = ({ icon: Icon, title, description }: FeatureProps) => {
   return (
