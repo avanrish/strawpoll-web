@@ -1,9 +1,9 @@
 import Link from 'next-intl/link';
 import Image from 'next/image';
 
-import { FeatureProps } from '@/src/components/Feature/Feature.type';
+import { FeatureProps } from '@/src/components/FeatureSection/FeatureHero.type';
 
-export const Feature = ({
+export const FeatureHero = ({
   icon: Icon,
   title,
   description,

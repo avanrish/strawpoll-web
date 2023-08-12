@@ -1,10 +1,10 @@
 import { StaticImageData } from 'next/dist/shared/lib/get-img-props';
-import { CalendarIcon } from '@heroicons/react/24/outline';
 
 import { Routes } from '@/src/utils/enums/routes';
+import { HeroIcon } from '@/src/types/common';
 
 export interface FeatureProps {
-  icon: typeof CalendarIcon;
+  icon: HeroIcon;
   title: string;
   description: string;
   lightImage: StaticImageData;

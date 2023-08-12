@@ -7,7 +7,7 @@ import { ThemeSwitch } from '@/src/components/ThemeSwitch';
 import { appUrl, themeCookieKey } from '@/src/utils/fixtures/config';
 import { Themes } from '@/src/utils/enums/themes';
 import { Hero } from '@/src/components/Hero';
-import { FeatureSection } from '@/src/components/Feature';
+import { FeatureSection } from '@/src/components/FeatureSection';
 
 export default async function Home() {
   const theme = cookies().get(themeCookieKey);
