@@ -8,6 +8,7 @@ import { appUrl, themeCookieKey } from '@/src/utils/fixtures/config';
 import { Themes } from '@/src/utils/enums/themes';
 import { Hero } from '@/src/components/Hero';
 import { FeatureSection } from '@/src/components/FeatureSection';
+import { ExploreRankings } from '@/src/components/ExploreRankings';
 
 export default async function Home() {
   const theme = cookies().get(themeCookieKey);
@@ -16,6 +17,7 @@ export default async function Home() {
     <>
       <Hero />
       <FeatureSection />
+      <ExploreRankings />
       <ThemeSwitch defaultEnabled={theme?.value === Themes.Dark} />
     </>
   );

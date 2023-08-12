@@ -84,5 +84,16 @@
         "description": "We are continuously working on additional features and QoL updates."
       }
     }
+  },
+  "ExploreRankings": {
+    "title": "Explore Our Rankings",
+    "description": "Vote on thousands of interesting topics and make your voice heard!",
+    "linkLabel": "Rankings Overview",
+    "explorePopularCategories": "Explore popular categories",
+    "entertainment": "Entertainment",
+    "popCulture": "Pop Culture",
+    "travel": "Travel",
+    "gaming": "Gaming",
+    "sports": "Sports"
   }
 }
