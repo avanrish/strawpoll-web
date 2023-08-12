@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 
 import { Routes } from '@/src/utils/enums/routes';
 
-export const HeroMain = () => {
+export const Main = () => {
   const t = useTranslations('Hero.Main');
 
   return (

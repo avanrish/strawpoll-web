@@ -1,11 +1,11 @@
-import { HeroMain } from '@/src/components/Hero/HeroMain';
-import { HeroStats } from '@/src/components/Hero/HeroStats';
+import { Main } from '@/src/components/Hero/Main';
+import { Statistics } from '@/src/components/Hero/Statistics';
 
 const Hero = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-900">
-      <HeroMain />
-      <HeroStats />
+      <Main />
+      <Statistics />
     </div>
   );
 };

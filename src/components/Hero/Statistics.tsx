@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Statistic } from '@/src/components/Hero/Statistic';
 import { heroStatistics } from '@/src/utils/fixtures/heroStatistics';
 
-export const HeroStats = () => {
+export const Statistics = () => {
   const t = useTranslations('Hero.Stats');
 
   return (
