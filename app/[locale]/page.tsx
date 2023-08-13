@@ -9,6 +9,7 @@ import { Themes } from '@/src/utils/enums/themes';
 import { Hero } from '@/src/components/Hero';
 import { FeatureSection } from '@/src/components/FeatureSection';
 import { ExploreRankings } from '@/src/components/ExploreRankings';
+import { CTASection } from '@/src/components/CTASection';
 
 export default async function Home() {
   const theme = cookies().get(themeCookieKey);
@@ -18,6 +19,7 @@ export default async function Home() {
       <Hero />
       <FeatureSection />
       <ExploreRankings />
+      <CTASection />
       <ThemeSwitch defaultEnabled={theme?.value === Themes.Dark} />
     </>
   );

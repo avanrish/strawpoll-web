@@ -95,5 +95,15 @@
     "travel": "Travel",
     "gaming": "Gaming",
     "sports": "Sports"
+  },
+  "CTASection": {
+    "title": {
+      "part1": "Ready to get started?",
+      "part2": "It's free!"
+    },
+    "links": {
+      "createPoll": "Create a poll",
+      "signUp": "Sign up"
+    }
   }
 }
