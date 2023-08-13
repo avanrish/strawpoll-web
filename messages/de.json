@@ -1,0 +1,143 @@
+{
+  "Index": {
+    "metadata": {
+      "title": "StrawPoll: Erstelle eine Umfrage in Sekunden",
+      "description": "Eine StrawPoll ist eine Abstimmung, die Menschen helfen kann, bessere Entscheidungen zu treffen. StrawPoll ist die einfachste Möglichkeit, sofort und kostenlos Meinungsumfragen in Echtzeit zu erstellen.",
+      "siteName": "StrawPoll"
+    }
+  },
+  "Header": {
+    "createPoll": "Umfrage erstellen",
+    "scheduleMeeting": "Terminumfrage",
+    "demo": "Demo",
+    "pricing": "Preise",
+    "helpCenter": "Hilfe-Center",
+    "guides": "Anleitungen",
+    "liveDemo": "Live-Demo",
+    "faq": "F.A.Q.",
+    "pollApi": "Umfrage-API",
+    "about": "Über uns",
+    "login": "Anmelden",
+    "signUp": "Registrieren",
+    "existingUser": "Bestehender Benutzer? <link>Anmelden</link>"
+  },
+  "Hero": {
+    "Main": {
+      "imageAlt": "Splash image",
+      "titlePart1": "Erstelle eine Umfrage",
+      "titlePart2": "in Sekunden",
+      "description": "Sie möchten Ihre Freunde fragen, wohin sie am Freitagabend gehen sollen, oder ein Treffen mit Kollegen vereinbaren? Erstellen Sie eine Umfrage - und erhalten Sie im Handumdrehen Antworten.",
+      "createAPoll": "Umfrage erstellen",
+      "viewExamples": "Live Demo"
+    },
+    "Stats": {
+      "title": "Mehr als 500,000 Nutzer weltweit vertrauen darauf",
+      "polls": "Umfragen",
+      "votes": "Stimmen",
+      "users": "Benutzer"
+    }
+  },
+  "FeatureSection": {
+    "first": {
+      "title": "Nutze unsere fortschrittlichen Umfragetools",
+      "description": "Eine StrawPoll ist eine Abstimmung, die dazu dient, auf einfache Weise die Meinung einer Gruppe oder der Öffentlichkeit zu einem bestimmten Thema zu ermitteln. Strawpolls sind sehr nützlich, wenn nur die Meinung der Mehrheit wichtig ist und nicht die Meinung jedes einzelnen Teilnehmers.",
+      "link1": {
+        "label": "Umfrage erstellen"
+      },
+      "link2": {
+        "label": "Beispiel ansehen"
+      }
+    },
+    "second": {
+      "title": "Planen Sie Ihre Meetings in kürzester Zeit",
+      "description": "StrawPoll Meetings ist ein großartiges und einfaches Tool zur Planung von Besprechungen und anderen Terminen mit Kunden, Kollegen oder Freunden. Eine Meeting-Umfrage ist sehr hilfreich in Situationen, in denen die Meinung jedes einzelnen Teilnehmers wichtig ist.",
+      "link1": {
+        "label": "Terminumfrage erstellen"
+      },
+      "link2": {
+        "label": "Beispiel ansehen"
+      }
+    },
+    "features": {
+      "title": "Einfache Umfragen mit leistungsstarker Konfiguration",
+      "subtitle": "Abstimmen leicht gemacht",
+      "description": "Während wir unsere Umfragen so einfach und schön wie möglich gestalten, bieten wir auch leistungsstarke Anpassungsoptionen, die eine bedarfsgerechte Anpassung für viele verschiedene Zwecke ermöglichen.",
+      "fakeDetection": {
+        "title": "Erkennung von Fälschungen",
+        "description": "Standardmäßig werden Bots und VPN-Benutzer von der Stimmabgabe bei Umfragen ausgeschlossen."
+      },
+      "deadlines": {
+        "title": "Deadlines",
+        "description": "Unsere Umfragen laufen auf unbestimmte Zeit. Sie können das ändern, indem Sie eine Deadline festlegen."
+      },
+      "emojiSupport": {
+        "title": "Emoji-Unterstützung",
+        "description": "Wir unterstützen alle gängigen Emojis. Sie können so viele Emojis verwenden, wie Sie wollen!"
+      },
+      "liveResults": {
+        "title": "Live-Ergebnisse",
+        "description": "Werten Sie Ihre Umfrageergebnisse in einem Torten- oder Balkendiagramm in Echtzeit aus."
+      },
+      "api": {
+        "title": "Umfrage-API",
+        "description": "Wir bieten eine einfach zu verwendende API für die Erstellung von Umfragen und die Analyse der Ergebnisse."
+      },
+      "activeDevelopment": {
+        "title": "Aktive Entwicklung",
+        "description": "Wir arbeiten kontinuierlich an zusätzlichen Funktionen, verbessertem Design und QoL-Updates."
+      }
+    }
+  },
+  "ExploreRankings": {
+    "title": "Entdecken Sie unsere Rankings",
+    "description": "Stimmen Sie über Tausende von interessanten Themen ab und verschaffen Sie sich Gehör!",
+    "linkLabel": "Übersicht der Ranglisten",
+    "explorePopularCategories": "Beliebte Kategorien erkunden",
+    "entertainment": "Unterhaltung",
+    "popCulture": "Popkultur",
+    "travel": "Reisen",
+    "gaming": "Spielen",
+    "sports": "Sport"
+  },
+  "CTASection": {
+    "title": {
+      "part1": "Sind Sie bereit, loszulegen?",
+      "part2": "Starten Sie jetzt kostenfrei mit StrawPoll."
+    },
+    "links": {
+      "createPoll": "Umfrage erstellen",
+      "signUp": "Registrieren"
+    }
+  },
+  "Footer": {
+    "description": "Einfaches und kostenloses Erstellen von Echtzeit-Umfragen und Abstimmungen.",
+    "languages": {
+      "en": "Englisch",
+      "de": "Deutsch"
+    },
+    "categories": {
+      "solutions": "Lösungen",
+      "support": "Support",
+      "company": "Unternehmen",
+      "legal": "Rechtliches"
+    },
+    "links": {
+      "pollMaker": "Umfrage erstellen",
+      "meetingScheduler": "Terminumfrage",
+      "discordBot": "Discord-Bot",
+      "pollApi": "Umfrage-API",
+      "rankings": "Rankings",
+      "pricing": "Preise",
+      "helpCenter": "Hilfe-Center",
+      "guides": "Anleitungen",
+      "faq": "F.A.Q.",
+      "integrations": "Integrationen",
+      "about": "Über uns",
+      "imprint": "Impressum",
+      "contact": "Kontakt",
+      "privacyPolicy": "Datenschutz",
+      "termsOfService": "AGB"
+    },
+    "legalInfo": "Diese Website basiert auf StrawPoll.com. Sie ist weder mit StrawPoll.com verbunden noch wird sie in irgendeiner Weise von ihnen unterstützt. Für echte Umfragen, besuchen Sie bitte <link>strawpoll.com</link>."
+  }
+}

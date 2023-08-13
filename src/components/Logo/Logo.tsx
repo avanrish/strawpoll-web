@@ -1,6 +1,6 @@
 import { LogoProps } from './Logo.type';
 
-export const Logo = ({ className }: LogoProps) => {
+export const Logo = ({ className, uniformColor }: LogoProps) => {
   return (
     <svg
       className={className}
@@ -63,13 +63,13 @@ export const Logo = ({ className }: LogoProps) => {
       ></path>
       <path
         id="path9"
-        fill="#f87171"
+        fill={uniformColor ? 'currentColor' : '#f87171'}
         stroke="none"
         d="M 22.890015 50.700012 L 45.570007 5.329987 L 22.890015 5.329987 C 10.364166 5.324463 0.205536 15.474182 0.200012 28 L 0.200012 28 C 0.197357 34.019501 2.586731 39.793365 6.842224 44.05072 C 11.097687 48.308075 16.870514 50.700012 22.890015 50.700012 Z"
       ></path>
       <path
         id="path10"
-        fill="#818cf8"
+        fill={uniformColor ? 'currentColor' : '#818cf8'}
         stroke="none"
         d="M 45.570007 28 L 22.890015 73.369995 L 45.570007 73.369995 C 58.097443 73.369995 68.254486 63.217438 68.26001 50.690002 L 68.26001 50.690002 C 68.26001 38.158661 58.101349 28 45.570007 28 Z"
       ></path>

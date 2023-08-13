@@ -1,26 +1,20 @@
 import { Metadata } from 'next';
 import { getTranslator } from 'next-intl/server';
-import { cookies } from 'next/headers';
 
 import { MetadataPropsWithLocale } from '@/src/types/common';
-import { ThemeSwitch } from '@/src/components/ThemeSwitch';
-import { appUrl, themeCookieKey } from '@/src/utils/fixtures/config';
-import { Themes } from '@/src/utils/enums/themes';
+import { appUrl } from '@/src/utils/fixtures/config';
 import { Hero } from '@/src/components/Hero';
 import { FeatureSection } from '@/src/components/FeatureSection';
 import { ExploreRankings } from '@/src/components/ExploreRankings';
 import { CTASection } from '@/src/components/CTASection';
 
 export default async function Home() {
-  const theme = cookies().get(themeCookieKey);
-
   return (
     <>
       <Hero />
       <FeatureSection />
       <ExploreRankings />
       <CTASection />
-      <ThemeSwitch defaultEnabled={theme?.value === Themes.Dark} />
     </>
   );
 }

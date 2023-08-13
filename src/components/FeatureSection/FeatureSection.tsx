@@ -26,15 +26,13 @@ export const FeatureSection = () => {
       <div className="pt-16 pb-32 bg-white dark:bg-gray-900">
         <div className="px-4 mx-auto max-w-md text-center sm:px-6 lg:px-8 sm:max-w-3xl lg:max-w-7xl">
           <h2 className="text-indigo-600 font-semibold uppercase tracking-wider">
-            Polling made easy
+            {t('features.subtitle')}
           </h2>
           <p className="font-extrabold text-gray-900 dark:text-gray-200 text-3xl tracking-tight mt-2 sm:text-4xl">
-            Simple polls with powerful configuration
+            {t('features.title')}
           </p>
           <p className="mt-5 text-gray-500 text-xl max-w-prose mx-auto">
-            While we make our polls as simple and beautiful as possible, we also
-            offer powerful customization options to enable on-demand adjustments
-            for many different purposes.
+            {t('features.description')}
           </p>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map(({ icon, featureKey }) => (

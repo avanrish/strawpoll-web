@@ -59,6 +59,9 @@
       }
     },
     "features": {
+      "title": "Simple polls with powerful configuration",
+      "subtitle": "Polling made easy",
+      "description": "While we make our polls as simple and beautiful as possible, we also offer powerful customization options to enable on-demand adjustments for many different purposes.",
       "fakeDetection": {
         "title": "Fake Detection",
         "description": "By default, bots and VPN users are blocked from voting on straw polls."
@@ -105,5 +108,36 @@
       "createPoll": "Create a poll",
       "signUp": "Sign up"
     }
+  },
+  "Footer": {
+    "description": "Making it easy to create instant, real-time polls and surveys for free.",
+    "languages": {
+      "en": "English",
+      "de": "German"
+    },
+    "categories": {
+      "solutions": "Solutions",
+      "support": "Support",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "pollMaker": "Poll Maker",
+      "meetingScheduler": "Meeting Scheduler",
+      "discordBot": "Discord Bot",
+      "pollApi": "Poll API",
+      "rankings": "Rankings",
+      "pricing": "Pricing",
+      "helpCenter": "Help Center",
+      "guides": "Guides",
+      "faq": "F.A.Q.",
+      "integrations": "Integrations",
+      "about": "About",
+      "imprint": "Imprint",
+      "contact": "Contact",
+      "privacyPolicy": "Privacy",
+      "termsOfService": "Terms"
+    },
+    "legalInfo": "This website is based on StrawPoll.com. It is not affiliated with StrawPoll.com or endorsed by them in any way. For any real polls, please visit <link>strawpoll.com</link>."
   }
 }

@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'><path stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 0.5rem center;
+        background-size:1.5em 1.5em;
+        padding-right: 2.5rem;
+        @apply focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800;
+    }
+}
+
 @layer components {
     .btn {
         @apply inline-flex px-4 font-medium text-center py-2 rounded-md border border-transparent items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 transition-all;

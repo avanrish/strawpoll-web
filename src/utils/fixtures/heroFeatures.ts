@@ -27,7 +27,10 @@ export interface HeroFeature {
 
 export interface Feature {
   icon: HeroIcon;
-  featureKey: keyof IntlMessages['FeatureSection']['features'];
+  featureKey: keyof Omit<
+    IntlMessages['FeatureSection']['features'],
+    'title' | 'subtitle' | 'description'
+  >;
 }
 
 export const heroFeatures: HeroFeature[] = [
