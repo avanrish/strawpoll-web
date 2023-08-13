@@ -14,10 +14,9 @@ export const LanguageChange = () => {
   return (
     <select
       value={currentLocale}
-      onChange={({ target }) => {
-        console.log(pathname, target.value);
-        router.replace(pathname, { locale: target.value });
-      }}
+      onChange={({ target }) =>
+        router.replace(pathname, { locale: target.value })
+      }
       className="border border-gray-300 rounded-md shadow-sm py-2 pl-3 pr-10 grow text-gray-600 sm:text-sm dark:border-gray-700 dark:bg-gray-700 dark:text-gray-300"
     >
       {Object.values(Locales).map((lang) => (
