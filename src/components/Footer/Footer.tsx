@@ -40,7 +40,9 @@ export const Footer = () => {
               <GlobeAltIcon className="h-8 text-gray-600 dark:text-gray-400" />
               <NextIntlClientProvider
                 locale={locale}
-                messages={pick(messages, 'Footer') as AbstractIntlMessages}
+                messages={
+                  pick(messages, 'Footer.languages') as AbstractIntlMessages
+                }
               >
                 <LanguageChange />
               </NextIntlClientProvider>
