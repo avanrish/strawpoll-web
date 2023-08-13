@@ -2,6 +2,7 @@ import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import { popularCategories } from '@/src/utils/fixtures/popularCategories';
+import { Fragment } from 'react';
 
 export const ExploreRankings = () => {
   const t = useTranslations('ExploreRankings');
@@ -28,9 +29,8 @@ export const ExploreRankings = () => {
               {`${t('explorePopularCategories')}: `}
             </span>
             {popularCategories.map(({ key, url, disabled }, i) => (
-              <>
+              <Fragment key={key}>
                 <Link
-                  key={key}
                   href={url}
                   className="text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-500 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
                   aria-disabled={disabled}
@@ -40,7 +40,7 @@ export const ExploreRankings = () => {
                 {i < popularCategories.length - 1 && (
                   <span className="text-gray-600"> · </span>
                 )}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
