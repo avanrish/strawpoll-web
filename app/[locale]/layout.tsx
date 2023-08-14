@@ -4,9 +4,9 @@ import { cookies } from 'next/headers';
 
 import { Header } from '@/src/components/Header';
 import { Themes } from '@/src/utils/enums/themes';
+import { Footer } from '@/src/components/Footer';
 
 import './globals.css';
-import { Footer } from '@/src/components/Footer';
 
 interface IRootLayoutProps {
   children: React.ReactNode;
@@ -20,8 +20,8 @@ export default function RootLayout({ children, params }: IRootLayoutProps) {
   if (params.locale !== locale) {
     notFound();
   }
-
   const classNames = ['antialiased'];
+
   if (themeCookie?.value === Themes.Dark) classNames.push(themeCookie.value);
 
   return (

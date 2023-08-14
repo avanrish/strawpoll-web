@@ -17,6 +17,7 @@ export const Main = () => {
               alt={t('imageAlt')}
               style={{ objectFit: 'cover' }}
               className="sm:rounded-2xl"
+              priority
               fill
             />
             <div className="w-full h-full absolute bg-gradient-to-r from-purple-800 to-indigo-700 dark:from-indigo-400 dark:to-indigo-400 mix-blend-multiply sm:rounded-2xl" />
