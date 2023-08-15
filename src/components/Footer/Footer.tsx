@@ -11,6 +11,7 @@ import { Logo } from '@/src/components/Logo';
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
 import { LanguageChange } from '@/src/components/Footer/LanguageChange';
 import { Links } from '@/src/components/Footer/Links';
+import { Socials } from '@/src/components/Footer/Socials';
 
 export const Footer = () => {
   const t = useTranslations('Footer');
@@ -29,7 +30,7 @@ export const Footer = () => {
             <p className="text-gray-600 dark:text-gray-400">
               {t('description')}
             </p>
-            {/*<ThemeSwitch defaultEnabled={theme?.value === Themes.Dark} />*/}
+            <Socials />
             <div className="flex space-x-2 items-center">
               <GlobeAltIcon className="h-8 text-gray-600 dark:text-gray-400" />
               <NextIntlClientProvider
