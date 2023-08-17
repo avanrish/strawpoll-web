@@ -24,7 +24,7 @@ export const NavigationLink = ({
       ) : null}
       <span
         className={`text-gray-900 dark:text-gray-200 ${
-          isMobile ? '' : 'lg:text-gray-700 lg:text-sm'
+          isMobile ? '' : 'lg:text-gray-700 dark:lg:text-gray-200 lg:text-sm'
         }`}
       >
         {text}
