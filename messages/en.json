@@ -6,6 +6,13 @@
       "siteName": "StrawPoll"
     }
   },
+  "Create": {
+    "metadata": {
+      "title": "Create a Poll - Free Poll Maker - StrawPoll.com",
+      "description": "Create an online poll for free. StrawPoll offers a simple and fast solution, whether you want to create an anonymous poll for a large audience or group polls with friends.",
+      "siteName": "StrawPoll"
+    }
+  },
   "Header": {
     "createPoll": "Create Poll",
     "scheduleMeeting": "Schedule Meeting",

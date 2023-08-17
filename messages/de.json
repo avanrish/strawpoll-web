@@ -6,6 +6,13 @@
       "siteName": "StrawPoll"
     }
   },
+  "Create": {
+    "metadata": {
+      "title": "Umfrage erstellen - Kostenlose Abstimmungen - StrawPoll.com",
+      "description": "Unser Umfrage-Tool ist kostenlos, einfach zu bedienen und besonders schnell! Die Vision von StrawPoll ist es, es für jeden wirklich einfach zu machen, schöne Online-Umfragen in kürzester Zeit zu erstellen.",
+      "siteName": "StrawPoll"
+    }
+  },
   "Header": {
     "createPoll": "Umfrage erstellen",
     "scheduleMeeting": "Terminumfrage",
