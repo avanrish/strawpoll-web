@@ -14,12 +14,12 @@ export const Links = () => {
             {t('categories.solutions')}
           </h3>
           <ul role="list" className="mt-4 space-y-4">
-            {footerLinks.solutions.map(({ key, url }) => (
+            {footerLinks.solutions.map(({ key, url, disabled }) => (
               <li key={key}>
                 <Link
                   className='className="text-base text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-300 aria-disabled:opacity-50 aria-disabled:pointer-events-none'
                   href={url}
-                  aria-disabled
+                  aria-disabled={disabled}
                 >
                   {t(`links.${key}`)}
                 </Link>
@@ -32,12 +32,12 @@ export const Links = () => {
             {t('categories.support')}
           </h3>
           <ul role="list" className="mt-4 space-y-4">
-            {footerLinks.support.map(({ key, url }) => (
+            {footerLinks.support.map(({ key, url, disabled }) => (
               <li key={key}>
                 <Link
                   className='className="text-base text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-300 aria-disabled:opacity-50 aria-disabled:pointer-events-none'
                   href={url}
-                  aria-disabled
+                  aria-disabled={disabled}
                 >
                   {t(`links.${key}`)}
                 </Link>
@@ -52,12 +52,12 @@ export const Links = () => {
             {t('categories.company')}
           </h3>
           <ul role="list" className="mt-4 space-y-4">
-            {footerLinks.company.map(({ key, url }) => (
+            {footerLinks.company.map(({ key, url, disabled }) => (
               <li key={key}>
                 <Link
                   className='className="text-base text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-300 aria-disabled:opacity-50 aria-disabled:pointer-events-none'
                   href={url}
-                  aria-disabled
+                  aria-disabled={disabled}
                 >
                   {t(`links.${key}`)}
                 </Link>
@@ -70,12 +70,12 @@ export const Links = () => {
             {t('categories.legal')}
           </h3>
           <ul role="list" className="mt-4 space-y-4">
-            {footerLinks.legal.map(({ key, url }) => (
+            {footerLinks.legal.map(({ key, url, disabled }) => (
               <li key={key}>
                 <Link
                   className='className="text-base text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-300 aria-disabled:opacity-50 aria-disabled:pointer-events-none'
                   href={url}
-                  aria-disabled
+                  aria-disabled={disabled}
                 >
                   {t(`links.${key}`)}
                 </Link>

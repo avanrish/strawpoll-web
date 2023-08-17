@@ -7,4 +7,5 @@ export interface NavigationLinkProps {
   icon?: HeroIcon;
   disabled?: boolean;
   isMobile: boolean;
+  closeMenu?: () => void;
 }

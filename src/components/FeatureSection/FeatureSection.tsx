@@ -17,8 +17,8 @@ export const FeatureSection = () => {
             description={t(`${feat.which}.description`)}
             lightImage={feat.lightImage}
             darkImage={feat.darkImage}
-            link1={{ label: t(`${feat.which}.link1.label`), url: feat.link1 }}
-            link2={{ label: t(`${feat.which}.link2.label`), url: feat.link2 }}
+            link1={{ label: t(`${feat.which}.link1.label`), ...feat.link1 }}
+            link2={{ label: t(`${feat.which}.link2.label`), ...feat.link2 }}
             reverse={i % 2 === 1}
           />
         ))}

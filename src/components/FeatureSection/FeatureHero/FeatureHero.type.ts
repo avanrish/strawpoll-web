@@ -12,10 +12,12 @@ export interface FeatureHeroProps {
   link1: {
     label: string;
     url: string | Routes;
+    disabled?: boolean;
   };
   link2: {
     label: string;
     url: string | Routes;
+    disabled?: boolean;
   };
   reverse?: boolean;
 }

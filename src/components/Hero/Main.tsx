@@ -33,9 +33,8 @@ export const Main = () => {
             <div className="mt-10 flex mx-auto max-w-sm sm:max-w-none">
               <div className="max-sm:w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:ml-12 lg:ml-14">
                 <Link
-                  className="btn primary py-3 sm:px-8 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
+                  className="btn primary py-3 sm:px-8"
                   href={Routes.CreatePoll}
-                  aria-disabled
                 >
                   {t('createAPoll')}
                 </Link>

@@ -29,14 +29,14 @@ export const FeatureHero = ({
           <Link
             className="btn primary py-3 mr-1 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
             href={link1.url}
-            aria-disabled
+            aria-disabled={link1.disabled}
           >
             {link1.label}
           </Link>
           <Link
             className="btn py-3 bg-white border border-gray-300 dark:border-gray-700 ml-3 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
             href={link2.url}
-            aria-disabled
+            aria-disabled={link2.disabled}
           >
             {link2.label}
           </Link>

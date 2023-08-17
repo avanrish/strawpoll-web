@@ -19,7 +19,6 @@ export const navLinks: NavLink[] = [
     i18nKey: 'createPoll',
     link: Routes.CreatePoll,
     icon: ChartBarIcon,
-    disabled: true,
   },
   {
     i18nKey: 'scheduleMeeting',

@@ -8,11 +8,13 @@ export const NavigationLink = ({
   icon: Icon,
   disabled,
   isMobile,
+  closeMenu,
 }: NavigationLinkProps) => {
   return (
     <Link
       href={link}
       className={`navlink ${isMobile ? 'mobile' : 'desktop'}`}
+      onClick={closeMenu}
       aria-disabled={disabled}
     >
       {Icon ? (

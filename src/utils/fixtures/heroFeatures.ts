@@ -20,8 +20,8 @@ export interface HeroFeature {
   icon: HeroIcon;
   lightImage: StaticImageData;
   darkImage: StaticImageData;
-  link1: string | Routes;
-  link2: string | Routes;
+  link1: { url: string | Routes; disabled?: boolean };
+  link2: { url: string | Routes; disabled?: boolean };
   which: keyof Omit<IntlMessages['FeatureSection'], 'features'>;
 }
 
@@ -38,16 +38,16 @@ export const heroFeatures: HeroFeature[] = [
     icon: ChartPieIcon,
     lightImage: lightPollMaker,
     darkImage: darkPollMaker,
-    link1: Routes.CreatePoll,
-    link2: '#',
+    link1: { url: Routes.CreatePoll },
+    link2: { url: '#', disabled: true },
     which: 'first',
   },
   {
     icon: CalendarIcon,
     lightImage: lightMeetingScheduler,
     darkImage: darkMeetingScheduler,
-    link1: '#',
-    link2: '#',
+    link1: { url: '#', disabled: true },
+    link2: { url: '#', disabled: true },
     which: 'second',
   },
 ];
