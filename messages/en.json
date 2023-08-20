@@ -11,7 +11,9 @@
       "title": "Create a Poll - Free Poll Maker - StrawPoll.com",
       "description": "Create an online poll for free. StrawPoll offers a simple and fast solution, whether you want to create an anonymous poll for a large audience or group polls with friends.",
       "siteName": "StrawPoll"
-    }
+    },
+    "title": "Create a Poll",
+    "subtitle": "Complete the below fields to create your poll."
   },
   "Header": {
     "createPoll": "Create Poll",

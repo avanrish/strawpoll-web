@@ -1,11 +1,39 @@
 import { Metadata } from 'next';
 import { getTranslator } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
 import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
+import { PollContainer } from '@/src/components/PollContainer';
+import { Input } from '@/src/components/Input';
 
 export default function Create() {
-  return <>Create Poll</>;
+  const t = useTranslations('Create');
+
+  return (
+    <>
+      <div className="max-w-3xl mx-auto pt-10 pb-12 sm:px-4 bg-gray-100">
+        <h1 className="text-gray-900 text-2xl text-center font-bold leading-7">
+          {t('title')}
+        </h1>
+        <h2 className="text-center text-sm mt-2 text-gray-500">
+          {t('subtitle')}
+        </h2>
+        <PollContainer>
+          <Input
+            label="Title"
+            placeholder="Type your question here"
+            sizeVariant="large"
+          />
+          <Input
+            label="Title"
+            placeholder="Type your question here"
+            sizeVariant="medium"
+          />
+        </PollContainer>
+      </div>
+    </>
+  );
 }
 
 export async function generateMetadata({
