@@ -25,11 +25,6 @@ export default function Create() {
             placeholder="Type your question here"
             sizeVariant="large"
           />
-          <Input
-            label="Title"
-            placeholder="Type your question here"
-            sizeVariant="medium"
-          />
         </PollContainer>
       </div>
     </>

@@ -6,6 +6,7 @@ import { InputProps } from '@/src/components/Input/Input.type';
 export const Input = ({
   label,
   sizeVariant = 'medium',
+  error,
   ...rest
 }: InputProps) => {
   const id = useId();
@@ -15,21 +16,23 @@ export const Input = ({
     {
       'py-2 px-3': sizeVariant === 'medium',
       'py-3 px-4': sizeVariant === 'large',
+      'placeholder:text-red-400 text-rose-900 outline-red-500 border-red-300':
+        error,
     }
   );
 
   return (
     <div>
       {label && (
-        <label htmlFor={id} className="label">
+        <label htmlFor={id} className="label text">
           {label}
         </label>
       )}
       <div className="mt-1 relative flex">
         <input {...rest} type="text" id={id} className={inputClass} />
-        {/* Error */}
         {/* Button - Icon */}
       </div>
+      {error && <p className="form-item-error">{error}</p>}
     </div>
   );
 };
