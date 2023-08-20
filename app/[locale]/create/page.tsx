@@ -1,6 +1,7 @@
-import { MetadataPropsWithLocale } from '@/src/types/common';
 import { Metadata } from 'next';
 import { getTranslator } from 'next-intl/server';
+
+import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 
 export default function Create() {
