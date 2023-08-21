@@ -1,23 +1,27 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Feature } from './Feature';
 
 describe('Feature component', () => {
   const mockProps = {
-    icon: () => <svg />,
+    icon: () => <svg data-testid="icon" />,
     title: 'Test Title',
     description: 'Test Description',
   };
 
   it('renders with provided props', () => {
-    const { getByText } = render(<Feature {...mockProps} />);
+    render(<Feature {...mockProps} />);
 
-    expect(getByText(mockProps.title)).toBeInTheDocument();
-    expect(getByText(mockProps.description)).toBeInTheDocument();
+    const titleElement = screen.getByText(mockProps.title);
+    const descriptionElement = screen.getByText(mockProps.description);
+
+    expect(titleElement).toBeInTheDocument();
+    expect(descriptionElement).toBeInTheDocument();
   });
 
   it('renders the icon', () => {
-    const { container } = render(<Feature {...mockProps} />);
-    const iconElement = container.querySelector('svg'); // Adjust the selector based on the actual icon structure
+    render(<Feature {...mockProps} />);
+
+    const iconElement = screen.getByTestId('icon');
 
     expect(iconElement).toBeInTheDocument();
   });

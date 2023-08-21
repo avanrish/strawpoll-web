@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Statistic } from './Statistic';
 
 describe('Statistic Component', () => {
@@ -6,10 +6,10 @@ describe('Statistic Component', () => {
   const value = '500M';
 
   it('renders the label and value correctly', () => {
-    const { getByText } = render(<Statistic label={label} value={value} />);
+    render(<Statistic label={label} value={value} />);
 
-    const labelElement = getByText(label);
-    const valueElement = getByText(value);
+    const labelElement = screen.getByText(label);
+    const valueElement = screen.getByText(value);
 
     expect(labelElement).toBeInTheDocument();
     expect(valueElement).toBeInTheDocument();

@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import { Routes } from '@/src/utils/enums/routes';
 
@@ -19,7 +19,7 @@ describe('NavigationLink', () => {
   const isMobile = true;
 
   it('renders a navigation link with text and an icon', () => {
-    const { getByText, getByTestId } = render(
+    render(
       <NavigationLink
         link={link}
         text={text}
@@ -29,15 +29,15 @@ describe('NavigationLink', () => {
       />
     );
 
-    const linkElement = getByText(text);
-    const iconElement = getByTestId('mock-icon');
+    const linkElement = screen.getByText(text);
+    const iconElement = screen.getByTestId('mock-icon');
 
     expect(linkElement).toBeInTheDocument();
     expect(iconElement).toBeInTheDocument();
   });
 
   it('renders a navigation link without an icon', () => {
-    const { getByText, queryByTestId } = render(
+    render(
       <NavigationLink
         link={link}
         text={text}
@@ -46,15 +46,15 @@ describe('NavigationLink', () => {
       />
     );
 
-    const linkElement = getByText(text);
-    const iconElement = queryByTestId('mock-icon');
+    const linkElement = screen.getByText(text);
+    const iconElement = screen.queryByTestId('mock-icon');
 
     expect(linkElement).toBeInTheDocument();
     expect(iconElement).toBeNull();
   });
 
   it('renders a mobile navigation link', () => {
-    const { container } = render(
+    render(
       <NavigationLink
         link={link}
         text={text}
@@ -64,14 +64,14 @@ describe('NavigationLink', () => {
       />
     );
 
-    const navLinkElement = container.firstChild;
+    const navLinkElement = screen.getByRole('link');
 
     expect(navLinkElement).toHaveClass('mobile');
     expect(navLinkElement).not.toHaveClass('desktop');
   });
 
   it('renders a desktop navigation link', () => {
-    const { container } = render(
+    render(
       <NavigationLink
         link={link}
         text={text}
@@ -81,14 +81,14 @@ describe('NavigationLink', () => {
       />
     );
 
-    const navLinkElement = container.firstChild;
+    const navLinkElement = screen.getByRole('link');
 
     expect(navLinkElement).toHaveClass('desktop');
     expect(navLinkElement).not.toHaveClass('mobile');
   });
 
   it('sets the correct href and aria-disabled attributes', () => {
-    const { container } = render(
+    render(
       <NavigationLink
         link={link}
         text={text}
@@ -98,7 +98,7 @@ describe('NavigationLink', () => {
       />
     );
 
-    const navLinkElement = container.firstChild;
+    const navLinkElement = screen.getByRole('link');
 
     expect(navLinkElement).toHaveAttribute('href', link);
     expect(navLinkElement).toHaveAttribute('aria-disabled', 'true');
