@@ -1,14 +1,14 @@
 import { useId } from 'react';
 import classNames from 'classnames';
 
-import { InputProps } from '@/src/components/Input/Input.type';
+import { TextBoxProps } from './TextBox.type';
 
-export const Input = ({
+export const TextBox = ({
   label,
   sizeVariant = 'medium',
   error,
   ...rest
-}: InputProps) => {
+}: TextBoxProps) => {
   const id = useId();
 
   const inputClass = classNames(

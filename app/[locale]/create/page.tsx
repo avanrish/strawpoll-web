@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 import { PollContainer } from '@/src/components/PollContainer';
-import { Input } from '@/src/components/Input';
+import { TextBox } from '../../../src/components/TextBox';
 
 export default function Create() {
   const t = useTranslations('Create');
@@ -20,7 +20,7 @@ export default function Create() {
           {t('subtitle')}
         </h2>
         <PollContainer>
-          <Input
+          <TextBox
             label="Title"
             placeholder="Type your question here"
             sizeVariant="large"

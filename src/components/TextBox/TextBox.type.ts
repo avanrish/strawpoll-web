@@ -1,4 +1,4 @@
-export interface InputProps
+export interface TextBoxProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   sizeVariant?: 'medium' | 'large';
