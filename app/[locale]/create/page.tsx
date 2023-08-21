@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 import { PollContainer } from '@/src/components/PollContainer';
-import { TextBox } from '../../../src/components/TextBox';
+import { TextBox } from '@/src/components/TextBox';
 
 export default function Create() {
   const t = useTranslations('Create');
