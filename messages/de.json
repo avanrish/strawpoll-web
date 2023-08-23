@@ -11,7 +11,9 @@
       "title": "Umfrage erstellen - Kostenlose Abstimmungen - StrawPoll.com",
       "description": "Unser Umfrage-Tool ist kostenlos, einfach zu bedienen und besonders schnell! Die Vision von StrawPoll ist es, es für jeden wirklich einfach zu machen, schöne Online-Umfragen in kürzester Zeit zu erstellen.",
       "siteName": "StrawPoll"
-    }
+    },
+    "title": "Umfrage erstellen",
+    "subtitle": "Füllen Sie die folgenden Felder aus, um Ihre Umfrage zu erstellen."
   },
   "Header": {
     "createPoll": "Umfrage erstellen",
@@ -146,5 +148,20 @@
       "termsOfService": "AGB"
     },
     "legalInfo": "Diese Website basiert auf StrawPoll.com. Sie ist weder mit StrawPoll.com verbunden noch wird sie in irgendeiner Weise von ihnen unterstützt. Für echte Umfragen, besuchen Sie bitte <link>strawpoll.com</link>."
+  },
+  "PollMaker": {
+    "pollTitle": {
+      "label": "Titel",
+      "placeholder": "Geben Sie Ihre Frage hier ein"
+    },
+    "answers": {
+      "label": "Antwort-Optionen",
+      "option": "Option {number}",
+      "addAnswer": {
+        "short": "Option hinzufügen",
+        "long": "Option hinzufügen"
+      }
+    },
+    "createPoll": "Umfrage erstellen"
   }
 }

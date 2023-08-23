@@ -148,5 +148,20 @@
       "termsOfService": "Terms"
     },
     "legalInfo": "This website is based on StrawPoll.com. It is not affiliated with StrawPoll.com or endorsed by them in any way. For any real polls, please visit <link>strawpoll.com</link>."
+  },
+  "PollMaker": {
+    "pollTitle": {
+      "label": "Title",
+      "placeholder": "Type your question here"
+    },
+    "answers": {
+      "label": "Answers",
+      "option": "Option {number}",
+      "addAnswer": {
+        "short": "Add option",
+        "long": "Add another option"
+      }
+    },
+    "createPoll": "Create poll"
   }
 }
