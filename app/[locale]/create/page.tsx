@@ -12,6 +12,8 @@ import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 import { PollContainer } from '@/src/components/PollContainer';
 import { PollMaker } from '@/src/components/PollMaker/PollMaker';
+import { Statistics } from '@/src/components/Hero/Statistics';
+import { ExploreRankings } from '@/src/components/ExploreRankings';
 
 export default function Create({
   params: { locale },
@@ -20,24 +22,28 @@ export default function Create({
   const messages = useMessages();
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900">
-      <div className="max-w-3xl mx-auto pt-10 pb-12 sm:px-4">
-        <h1 className="text-gray-900 dark:text-gray-100 text-2xl text-center font-bold leading-7 sm:text-3xl">
-          {t('title')}
-        </h1>
-        <h2 className="text-center text-sm mt-2 text-gray-500">
-          {t('subtitle')}
-        </h2>
-        <PollContainer>
-          <NextIntlClientProvider
-            locale={locale}
-            messages={pick(messages, 'PollMaker') as AbstractIntlMessages}
-          >
-            <PollMaker />
-          </NextIntlClientProvider>
-        </PollContainer>
+    <>
+      <div className="bg-gray-100 dark:bg-gray-900">
+        <div className="max-w-3xl mx-auto pt-10 pb-12 sm:px-4">
+          <h1 className="text-gray-900 dark:text-gray-100 text-2xl text-center font-bold leading-7 sm:text-3xl">
+            {t('title')}
+          </h1>
+          <h2 className="text-center text-sm mt-2 text-gray-500">
+            {t('subtitle')}
+          </h2>
+          <PollContainer>
+            <NextIntlClientProvider
+              locale={locale}
+              messages={pick(messages, 'PollMaker') as AbstractIntlMessages}
+            >
+              <PollMaker />
+            </NextIntlClientProvider>
+          </PollContainer>
+        </div>
       </div>
-    </div>
+      <Statistics />
+      <ExploreRankings />
+    </>
   );
 }
 
