@@ -27,7 +27,11 @@ export const HelpCenter = () => {
         <p className="text-gray-300 text-lg mt-3 md:max-w-xl">
           {t('description')}
         </p>
-        <a className="btn mt-8 bg-white py-3 px-5 hover:bg-gray-50">
+        <a
+          className="btn mt-8 bg-white py-3 px-5 hover:bg-gray-50 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
+          href="#"
+          aria-disabled
+        >
           <span className="text-gray-900">{t('link')}</span>
           <ArrowTopRightOnSquareIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" />
         </a>
