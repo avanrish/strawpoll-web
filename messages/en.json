@@ -163,5 +163,27 @@
       }
     },
     "createPoll": "Create poll"
+  },
+  "HowItWorks": {
+    "subtitle": "How it works",
+    "title": "New to StrawPoll? No problem.",
+    "description": "We have designed our poll maker to be as easy and intuitive to use as possible. At the same time, we are constantly optimizing the workflow of creating online polls on StrawPoll.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Create a poll",
+        "description": "Choose a title, a set of answer options and some basic settings."
+      },
+      {
+        "step": 2,
+        "title": "Share your link",
+        "description": "Invite participants by sharing your StrawPoll link."
+      },
+      {
+        "step": 3,
+        "title": "Get results",
+        "description": "When a vote is cast, results will be updated in real-time."
+      }
+    ]
   }
 }

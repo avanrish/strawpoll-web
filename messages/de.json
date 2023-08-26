@@ -163,5 +163,27 @@
       }
     },
     "createPoll": "Umfrage erstellen"
+  },
+  "HowItWorks": {
+    "subtitle": "Wie es funktioniert",
+    "title": "Neu bei StrawPoll? Kein Problem!",
+    "description": "Wir haben unser Umfragetool gestaltet, dass er so einfach und intuitiv wie möglich zu bedienen ist. Gleichzeitig optimieren wir ständig den Arbeitsablauf bei der Erstellung von Umfragen auf StrawPoll.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Eine Umfrage erstellen",
+        "description": "Wählen Sie einen Titel, eine Reihe von Antwortmöglichkeiten und einige Grundeinstellungen."
+      },
+      {
+        "step": 2,
+        "title": "Teilen Sie Ihren Link",
+        "description": "Laden Sie Teilnehmer ein, indem Sie Ihren StrawPoll-Link teilen."
+      },
+      {
+        "step": 3,
+        "title": "Ergebnisse erhalten",
+        "description": "Wenn eine Stimme abgegeben wird, werden die Ergebnisse in Echtzeit aktualisiert."
+      }
+    ]
   }
 }
