@@ -203,5 +203,12 @@
       },
       "link": "Learn more about our different poll types →"
     }
+  },
+  "HelpCenter": {
+    "imageAlt": "Help Center",
+    "subtitle": "Help Center",
+    "title": "We're here to help",
+    "description": "While the basic interface is kept simple, StrawPoll provides powerful tools to enable on-demand adjustments for many different purposes. Our help center is an ever-growing resource to help you get assistance with problems and discover features you don't know yet.",
+    "link": "Visit the help center"
   }
 }

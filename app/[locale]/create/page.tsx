@@ -16,6 +16,7 @@ import { Statistics } from '@/src/components/Hero/Statistics';
 import { ExploreRankings } from '@/src/components/ExploreRankings';
 import { HowItWorks } from '@/src/components/HowItWorks';
 import { PollMakerFeatures } from '@/src/components/PollMakerFeatures';
+import { HelpCenter } from '@/src/components/HelpCenter';
 
 export default function Create({
   params: { locale },
@@ -47,7 +48,7 @@ export default function Create({
       <HowItWorks />
       <PollMakerFeatures />
       <ExploreRankings />
-      Help Center
+      <HelpCenter />
     </>
   );
 }
