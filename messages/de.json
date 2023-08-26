@@ -185,5 +185,23 @@
         "description": "Wenn eine Stimme abgegeben wird, werden die Ergebnisse in Echtzeit aktualisiert."
       }
     ]
+  },
+  "PollMakerFeatures": {
+    "pollInSeconds": {
+      "title": "Erstelle eine Umfrage in Sekunden",
+      "description": {
+        "part1": "Ob es sich um eine schnelle Umfrage mit Freunden oder die Lösung einer ewigen Diskussion in Ihrem Forum handelt, StrawPoll hilft Ihnen, die Antwort schnell und einfach zu finden.",
+        "part2": "Sind Sie in den sozialen Medien aktiv und wollten Sie schon immer wissen, was Ihre Follower wirklich denken? Hier können Sie in Sekundenschnelle eine kostenlose Umfrage erstellen, ohne sich anzumelden oder zu registrieren. Natürlich bieten wir für komplexe Funktionen und zur Verwaltung Ihrer Umfragen auch ein Login an, das aber nicht zwingend erforderlich ist."
+      },
+      "link": "Erfahren Sie mehr darüber, wie Sie Ihre erste Umfrage erstellen können →"
+    },
+    "realTimeResults": {
+      "title": "Erhalte die Ergebnisse in Echtzeit",
+      "description": {
+        "part1": "Die Ergebnisse einer Umfrage werden in Echtzeit über eine Server-zu-Client-Push-Kommunikation aktualisiert. Der Administrator einer Umfrage kann jederzeit ändern, wer Zugriff auf die Ergebnisse haben soll, und kann weitere nützliche Einstellungen vornehmen.",
+        "part2": ""
+      },
+      "link": "Erfahren Sie mehr über unsere verschiedenen Umfragearten →"
+    }
   }
 }

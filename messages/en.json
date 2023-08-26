@@ -185,5 +185,23 @@
         "description": "When a vote is cast, results will be updated in real-time."
       }
     ]
+  },
+  "PollMakerFeatures": {
+    "pollInSeconds": {
+      "title": "Create an online poll in a matter of seconds",
+      "description": {
+        "part1": "Whether it's a quick poll with friends or the solution to an eternal discussion in your forum, StrawPoll helps you find the answer quickly and easily.",
+        "part2": "Are you on social media and have you ever wanted to know what your followers really think? Here you can create a free poll in seconds, without any signup or registration. Of course, for complex features and to manage your polls, we also offer a login, which is not mandatory."
+      },
+      "link": "Learn more about how to create your first poll →"
+    },
+    "realTimeResults": {
+      "title": "Get your results in real-time",
+      "description": {
+        "part1": "The results of a poll are updated in real time via server-to-client push communication. The admin of a poll can change who should have access to the results at any time and can choose other useful settings.",
+        "part2": ""
+      },
+      "link": "Learn more about our different poll types →"
+    }
   }
 }
