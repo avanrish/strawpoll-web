@@ -13,7 +13,7 @@ export default async function Home() {
     <>
       <Hero />
       <FeatureSection />
-      <ExploreRankings />
+      <ExploreRankings variant="darker" />
       <CTASection />
     </>
   );

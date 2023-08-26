@@ -3,17 +3,26 @@ import { useTranslations } from 'next-intl';
 import { Fragment } from 'react';
 
 import { popularCategories } from '@/src/utils/fixtures/popularCategories';
+import { ExploreRankingsProps } from '@/src/components/ExploreRankings/ExploreRankings.type';
 
-export const ExploreRankings = () => {
+export const ExploreRankings = ({ variant }: ExploreRankingsProps) => {
   const t = useTranslations('ExploreRankings');
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-800">
+    <div
+      className={`bg-gray-100 ${
+        variant === 'darker' ? 'dark:bg-gray-800' : 'dark:bg-gray-700'
+      }`}
+    >
       <div className="py-16 px-4 mx-auto max-w-4xl sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="text-4xl text-gray-900 dark:text-gray-200 font-extrabold tracking-tight">
           {t('title')}
         </h2>
-        <p className="text-xl text-gray-500 font-medium mt-1 tracking-tighter">
+        <p
+          className={`text-xl text-gray-500 font-medium mt-1 tracking-tighter ${
+            variant === 'lighter' ? 'dark:text-gray-400' : ''
+          }`}
+        >
           {t('description')}
         </p>
         <Link

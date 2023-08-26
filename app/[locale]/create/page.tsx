@@ -47,7 +47,7 @@ export default function Create({
       <Statistics />
       <HowItWorks />
       <PollMakerFeatures />
-      <ExploreRankings />
+      <ExploreRankings variant="lighter" />
       <HelpCenter />
     </>
   );
