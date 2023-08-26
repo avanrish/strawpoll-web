@@ -1,4 +1,4 @@
-import { PollMakerStepProps } from '@/src/components/HowItWorks/PollMakerStep.type';
+import { PollMakerStepProps } from './PollMakerStep.type';
 
 export const PollMakerStep = ({
   step,

@@ -43,8 +43,10 @@ export default function Create({
       {/*  </div>*/}
       {/*</div>*/}
       {/*<Statistics />*/}
-      <HowItWorks />
+      {/*<HowItWorks />*/}
+      {/* HowItWorksHero */}
       {/*<ExploreRankings />*/}
+      {/* Help Center */}
     </>
   );
 }
