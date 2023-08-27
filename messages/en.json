@@ -210,5 +210,15 @@
     "title": "We're here to help",
     "description": "While the basic interface is kept simple, StrawPoll provides powerful tools to enable on-demand adjustments for many different purposes. Our help center is an ever-growing resource to help you get assistance with problems and discover features you don't know yet.",
     "link": "Visit the help center"
+  },
+  "NotFound": {
+    "metadata": {
+      "title": "Page not found - Error 404 - StrawPoll.com",
+      "description": "Page not found - Error 404 - StrawPoll.com"
+    },
+    "title": "Page not found",
+    "imageAlt": "Page not found - Error 404",
+    "description": "This page was either deleted or never existed.",
+    "link": "Go to the start page"
   }
 }

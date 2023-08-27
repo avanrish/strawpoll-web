@@ -210,5 +210,15 @@
     "title": "Wir sind hier, um zu helfen",
     "description": "Während die grundlegende Schnittstelle einfach gehalten ist, bietet StrawPoll leistungsstarke Werkzeuge, die Anpassungen bei Bedarf für viele verschiedene Zwecke ermöglichen. Unser Hilfe-Center ist eine ständig wachsende Ressource, die Ihnen bei Problemen hilft und Funktionen entdeckt, die Sie noch nicht kennen.",
     "link": "Besuchen Sie das Hilfezentrum"
+  },
+  "NotFound": {
+    "metadata": {
+      "title": "Seite nicht gefunden - Fehler 404 - StrawPoll.com",
+      "description": "Seite nicht gefunden - Fehler 404 - StrawPoll.com"
+    },
+    "title": "Seite nicht gefunden",
+    "imageAlt": "Seite nicht gefunden - Fehler 404",
+    "description": "Diese Seite wurde entweder gelöscht oder hat nie existiert.",
+    "link": "Zurück zur Startseite"
   }
 }

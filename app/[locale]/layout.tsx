@@ -19,10 +19,10 @@ export default function RootLayout({ children, params }: IRootLayoutProps) {
   }
 
   return (
-    <html lang={locale}>
-      <body className="antialiased">
+    <html lang={locale} className="h-full">
+      <body className="font-sans antialiased bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400 min-h-full flex flex-col">
         <Header />
-        <main>{children}</main>
+        <main className="flex-auto">{children}</main>
         <Footer />
       </body>
     </html>
