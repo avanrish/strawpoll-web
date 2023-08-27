@@ -12,7 +12,7 @@ export const TextBox = ({
   const id = useId();
 
   const inputClass = classNames(
-    'bg-white dark:bg-gray-700 flex-1 border border-gray-300 dark:border-gray-700 rounded-md text-gray-600 dark:text-gray-300 outline-indigo-500 outline-offset-1 dark:outline-none dark:ring-1 dark:ring-indigo-500 dark:placeholder-gray-500',
+    'bg-white dark:bg-gray-700 flex-1 border border-gray-300 dark:border-gray-700 rounded-md text-gray-600 dark:text-gray-300 outline-indigo-500 outline-offset-1 dark:outline-none dark:focus:ring-1 dark:focus:ring-indigo-500 dark:placeholder-gray-500',
     {
       'py-2 px-3': sizeVariant === 'medium',
       'py-3 px-4': sizeVariant === 'large',
