@@ -14,7 +14,6 @@ export function generateCsp() {
         "'report-sample'",
         "'self'",
         `'nonce-${nonce}'`,
-        "'strict-dynamic'",
         ...(process.env.NODE_ENV === 'production' ? [] : ["'unsafe-eval'"]),
       ],
     },
@@ -49,7 +48,7 @@ export default async function middleware(request: NextRequest) {
 
   const defaultLocale = Locales.English;
   const handleI18nRouting = createIntlMiddleware({
-    locales: ['en', 'de'],
+    locales: Object.values(Locales),
     defaultLocale,
     localePrefix: 'always',
   });
