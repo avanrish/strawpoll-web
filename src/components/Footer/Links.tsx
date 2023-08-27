@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import { footerLinks } from '@/src/utils/fixtures/footerLinks';
