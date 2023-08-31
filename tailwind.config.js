@@ -6,6 +6,11 @@ module.exports = {
     transitionDuration: {
       DEFAULT: '250ms',
     },
+    extend: {
+      colors: {
+        'rock-blue': '#94a3b8',
+      },
+    },
   },
   plugins: [require('@headlessui/tailwindcss')({ prefix: 'ui' })],
 };

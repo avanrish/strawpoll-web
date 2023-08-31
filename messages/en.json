@@ -220,5 +220,11 @@
     "imageAlt": "Page not found - Error 404",
     "description": "This page was either deleted or never existed.",
     "link": "Go to the start page"
+  },
+  "VoteForm": {
+    "vote": "Vote",
+    "share": "Share",
+    "results": "Results",
+    "showResults": "Show results"
   }
 }

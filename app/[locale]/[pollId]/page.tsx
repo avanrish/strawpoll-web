@@ -1,42 +1,54 @@
 import { Metadata } from 'next';
+import {
+  AbstractIntlMessages,
+  NextIntlClientProvider,
+  useMessages,
+} from 'next-intl';
+import pick from 'lodash/pick';
 
 import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 import { PollContainer } from '@/src/components/PollContainer';
 import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
+import { VoteForm } from '@/src/components/VoteForm';
 
-export default function PollVote() {
+export default function PollVote({
+  params: { locale },
+}: MetadataPropsWithLocale) {
   // TODO: if not found use notFound() from next/navigation and set metadata
-  // TODO: Translate it and use proper poll data
+  // TODO: Translate it
+  // TODO: use proper poll data
+
+  const messages = useMessages();
 
   return (
-    <div className="pt-10 pb-12">
-      <PollContainer withoutMargin>
-        <div className="flex justify-between items-center">
-          <p className="text-2xl text-gray-900 font-semibold">asd</p>
-          <div className="w-8 h-8 rounded-full flex items-center justify-center -mr-2 focus:border border-gray-200 focus:ring-2 ring-indigo-600 ring-offset-2 ">
-            <EllipsisVerticalIcon className="w-6 h-6" />
+    <div className="bg-gray-50 dark:bg-gray-900 pt-10 pb-12 sm:px-4">
+      <div className="max-w-3xl mx-auto">
+        <PollContainer withoutMargin>
+          <div className="flex justify-between items-center">
+            <p className="text-2xl text-gray-900 dark:text-gray-200 font-semibold">
+              asd
+            </p>
+            <div className="w-8 h-8 rounded-full flex items-center justify-center -mr-2 focus:border border-gray-200 focus:ring-2 ring-indigo-600 dark:ring-indigo-500 ring-offset-2 dark:text-rock-blue dark:bg-gray-700/50">
+              <EllipsisVerticalIcon className="w-6 h-6" />
+            </div>
           </div>
-        </div>
-        <p className="flex items-center mt-1 text-gray-500">
-          <span>by a guest</span>
-          <span className="mx-1">·</span>
-          <span>19 minutes ago</span>
-        </p>
-        <div className="mt-8 text-gray-500">
-          <div>Make a choice:</div>
-          <div className="mt-4 space-y-3">
-            <label className="flex items-center px-2.5 py-3 border border-gray-200 rounded-md">
-              <input type="radio" className="min-w-[1.25rem] h-5 mr-2.5" />
-              <span className="text-lg truncate">zxc</span>
-            </label>
-            <label className="flex items-center px-2.5 py-3 border border-gray-200 rounded-md">
-              <input type="radio" className="min-w-[1.25rem] h-5 mr-2.5" />
-              <span className="text-lg truncate">cxz</span>
-            </label>
+          <p className="flex items-center mt-1 text-gray-500 dark:text-rock-blue">
+            <span>by a guest</span>
+            <span className="mx-1">·</span>
+            <span>19 minutes ago</span>
+          </p>
+          <div className="mt-8 text-gray-500 dark:text-rock-blue">
+            <div>Make a choice:</div>
+            <NextIntlClientProvider
+              locale={locale}
+              messages={pick(messages, 'VoteForm') as AbstractIntlMessages}
+            >
+              <VoteForm />
+            </NextIntlClientProvider>
           </div>
-        </div>
-      </PollContainer>
+        </PollContainer>
+      </div>
     </div>
   );
 }
@@ -44,7 +56,9 @@ export default function PollVote() {
 export async function generateMetadata({
   params: { locale },
 }: MetadataPropsWithLocale): Promise<Metadata> {
-  // TODO: Use translations + proper poll data
+  // TODO: Use translations
+  // TODO: Use poll data
+  // TODO: handle not found
   // const t = await getTranslator(locale, 'Poll');
 
   return {
