@@ -9,7 +9,7 @@ export const Radio = ({
 }: RadioProps) => {
   return (
     <label
-      className={`flex items-center px-2.5 py-3 border border-gray-200 dark:border-gray-700 rounded-md max-w-md ${
+      className={`flex items-center px-2.5 py-3 border border-gray-200 dark:border-gray-700 rounded-md max-w-md cursor-pointer ${
         checked
           ? 'ring-2 ring-indigo-600 dark:ring-indigo-500 border-transparent'
           : ''
@@ -25,7 +25,9 @@ export const Radio = ({
         checked={checked}
         onChange={onChange}
       />
-      <span className="text-lg truncate sm:text-base">{label ?? value}</span>
+      <span className="text-lg truncate sm:text-base grow">
+        {label ?? value}
+      </span>
     </label>
   );
 };
