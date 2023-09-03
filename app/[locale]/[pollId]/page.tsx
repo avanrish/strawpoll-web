@@ -5,11 +5,12 @@ import {
   useMessages,
 } from 'next-intl';
 import pick from 'lodash/pick';
+import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
+import { LockClosedIcon } from '@heroicons/react/24/solid';
 
 import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 import { PollContainer } from '@/src/components/PollContainer';
-import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
 import { VoteForm } from '@/src/components/VoteForm';
 
 export default function PollVote({
@@ -48,6 +49,10 @@ export default function PollVote({
             </NextIntlClientProvider>
           </div>
         </PollContainer>
+        <div className="flex items-center justify-center mt-8 text-gray-500 dark:text-rock-blue">
+          <LockClosedIcon className="h-4 w-4 -ml-1 mr-2 " />
+          <span className="text-sm">One vote per IP-Address allowed.</span>
+        </div>
       </div>
     </div>
   );
