@@ -14,7 +14,7 @@ export function generateCsp() {
         "'report-sample'",
         "'self'",
         `'nonce-${nonce}'`,
-        ...(process.env.NODE_ENV === 'production' ? [] : ["'unsafe-eval'"]),
+        ...(process.env.APP_ENV === 'production' ? [] : ["'unsafe-eval'"]),
       ],
     },
     {
