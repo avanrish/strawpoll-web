@@ -22,7 +22,7 @@
     "next-intl": "3.0.0-beta.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "0.32.4",
+    "sharp": "0.33.1",
     "typescript": "5.1.3"
   },
   "devDependencies": {
