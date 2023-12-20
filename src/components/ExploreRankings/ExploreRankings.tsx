@@ -1,9 +1,9 @@
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 import { Fragment } from 'react';
 
 import { popularCategories } from '@/src/utils/fixtures/popularCategories';
 import { ExploreRankingsProps } from '@/src/components/ExploreRankings/ExploreRankings.type';
+import { Link } from '@/src/navigation';
 
 export const ExploreRankings = ({ variant }: ExploreRankingsProps) => {
   const t = useTranslations('ExploreRankings');

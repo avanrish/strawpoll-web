@@ -2,6 +2,7 @@ import createIntlMiddleware from 'next-intl/middleware';
 import { NextRequest } from 'next/server';
 
 import { Locales } from '@/src/utils/enums/locales';
+import { localePrefix, locales } from '@/src/navigation';
 
 export function generateCsp() {
   const nonce = crypto.randomUUID();
@@ -48,9 +49,9 @@ export default async function middleware(request: NextRequest) {
 
   const defaultLocale = Locales.English;
   const handleI18nRouting = createIntlMiddleware({
-    locales: Object.values(Locales),
+    locales,
     defaultLocale,
-    localePrefix: 'always',
+    localePrefix,
   });
   const response = handleI18nRouting(request);
 

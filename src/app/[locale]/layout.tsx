@@ -1,8 +1,8 @@
-import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 
 import { Header } from '@/src/components/Header';
 import { Footer } from '@/src/components/Footer';
+import { Locales } from '@/src/utils/enums/locales';
 
 import './globals.css';
 
@@ -11,12 +11,8 @@ interface IRootLayoutProps {
   params: any;
 }
 
-export default function RootLayout({ children, params }: IRootLayoutProps) {
-  const locale = useLocale();
-
-  if (params.locale !== locale) {
-    notFound();
-  }
+export default function RootLayout({ children, params: {locale} }: IRootLayoutProps) {
+  if (!Object.values(Locales).includes(locale as any)) notFound();
 
   return (
     <html lang={locale} className="h-full">

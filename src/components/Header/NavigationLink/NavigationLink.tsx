@@ -1,4 +1,4 @@
-import Link from 'next-intl/link';
+import { Link } from '@/src/navigation';
 
 import { NavigationLinkProps } from './NavigationLink.type';
 

@@ -1,7 +1,7 @@
-import Link from 'next-intl/link';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
+import { Link } from '@/src/navigation';
 import { Routes } from '@/src/utils/enums/routes';
 
 export const Main = () => {

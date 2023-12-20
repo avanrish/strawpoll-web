@@ -1,6 +1,6 @@
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
+import { Link } from '@/src/navigation';
 import { footerLinks } from '@/src/utils/fixtures/footerLinks';
 
 export const Links = () => {

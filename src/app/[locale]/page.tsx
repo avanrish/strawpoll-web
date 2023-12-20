@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
-import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 import { Hero } from '@/src/components/Hero';
 import { FeatureSection } from '@/src/components/FeatureSection';
@@ -19,10 +18,8 @@ export default async function Home() {
   );
 }
 
-export async function generateMetadata({
-  params: { locale },
-}: MetadataPropsWithLocale): Promise<Metadata> {
-  const t = await getTranslator(locale, 'Index');
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('Index');
 
   return {
     title: t('metadata.title'),

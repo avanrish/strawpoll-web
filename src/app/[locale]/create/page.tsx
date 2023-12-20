@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import {
   AbstractIntlMessages,
   NextIntlClientProvider,
@@ -53,10 +53,8 @@ export default function Create({
   );
 }
 
-export async function generateMetadata({
-  params: { locale },
-}: MetadataPropsWithLocale): Promise<Metadata> {
-  const t = await getTranslator(locale, 'Create');
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('Create');
 
   return {
     title: t('metadata.title'),

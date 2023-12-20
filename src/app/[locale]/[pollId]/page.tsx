@@ -64,7 +64,7 @@ export async function generateMetadata({
   // TODO: Use translations
   // TODO: Use poll data
   // TODO: handle not found
-  // const t = await getTranslator(locale, 'Poll');
+  // const t = await getTranslations('Poll');
 
   return {
     title: '{Test} - Online Poll - StrawPoll.com',

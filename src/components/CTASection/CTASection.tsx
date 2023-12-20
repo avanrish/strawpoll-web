@@ -1,7 +1,7 @@
-import Link from 'next-intl/link';
+import { useTranslations } from 'next-intl';
 
 import { Routes } from '@/src/utils/enums/routes';
-import { useTranslations } from 'next-intl';
+import { Link } from '@/src/navigation';
 
 export const CTASection = () => {
   const t = useTranslations('CTASection');

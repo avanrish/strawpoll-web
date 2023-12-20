@@ -1,18 +1,15 @@
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 
-import { MetadataPropsWithLocale } from '@/src/types/common';
 import { appUrl } from '@/src/utils/fixtures/config';
 
 export default function CatchAllPage() {
   return notFound();
 }
 
-export async function generateMetadata({
-  params: { locale },
-}: MetadataPropsWithLocale): Promise<Metadata> {
-  const t = await getTranslator(locale, 'NotFound');
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('NotFound');
 
   return {
     title: t('metadata.title'),
