@@ -1,17 +1,13 @@
+import { NextIntlClientProvider } from 'next-intl';
 import { render, screen } from '@testing-library/react';
 
 import { Routes } from '@/src/utils/enums/routes';
+import { Locales } from '@/src/utils/enums/locales';
 
 import { NavigationLink } from './NavigationLink';
 
-jest.mock('next-intl/link', () => ({
-  __esModule: true,
-  default: jest.fn(({ children, ...rest }) => {
-    return <a {...rest}>{children}</a>;
-  }),
-}));
-
 describe('NavigationLink', () => {
+  const locale = Locales.English;
   const link = Routes.CreatePoll;
   const text = 'Example Link';
   const Icon = () => <svg data-testid="mock-icon" />;
@@ -20,13 +16,15 @@ describe('NavigationLink', () => {
 
   it('renders a navigation link with text and an icon', () => {
     render(
-      <NavigationLink
-        link={link}
-        text={text}
-        icon={Icon}
-        disabled={disabled}
-        isMobile={isMobile}
-      />
+      <NextIntlClientProvider locale={locale}>
+        <NavigationLink
+          link={link}
+          text={text}
+          icon={Icon}
+          disabled={disabled}
+          isMobile={isMobile}
+        />
+      </NextIntlClientProvider>
     );
 
     const linkElement = screen.getByText(text);
@@ -38,12 +36,14 @@ describe('NavigationLink', () => {
 
   it('renders a navigation link without an icon', () => {
     render(
-      <NavigationLink
-        link={link}
-        text={text}
-        disabled={disabled}
-        isMobile={isMobile}
-      />
+      <NextIntlClientProvider locale={locale}>
+        <NavigationLink
+          link={link}
+          text={text}
+          disabled={disabled}
+          isMobile={isMobile}
+        />
+      </NextIntlClientProvider>
     );
 
     const linkElement = screen.getByText(text);
@@ -55,13 +55,15 @@ describe('NavigationLink', () => {
 
   it('renders a mobile navigation link', () => {
     render(
-      <NavigationLink
-        link={link}
-        text={text}
-        icon={Icon}
-        disabled={disabled}
-        isMobile={true}
-      />
+      <NextIntlClientProvider locale={locale}>
+        <NavigationLink
+          link={link}
+          text={text}
+          icon={Icon}
+          disabled={disabled}
+          isMobile={true}
+        />
+      </NextIntlClientProvider>
     );
 
     const navLinkElement = screen.getByRole('link');
@@ -72,13 +74,15 @@ describe('NavigationLink', () => {
 
   it('renders a desktop navigation link', () => {
     render(
-      <NavigationLink
-        link={link}
-        text={text}
-        icon={Icon}
-        disabled={disabled}
-        isMobile={false}
-      />
+      <NextIntlClientProvider locale={locale}>
+        <NavigationLink
+          link={link}
+          text={text}
+          icon={Icon}
+          disabled={disabled}
+          isMobile={false}
+        />
+      </NextIntlClientProvider>
     );
 
     const navLinkElement = screen.getByRole('link');
@@ -89,18 +93,20 @@ describe('NavigationLink', () => {
 
   it('sets the correct href and aria-disabled attributes', () => {
     render(
-      <NavigationLink
-        link={link}
-        text={text}
-        icon={Icon}
-        disabled={true}
-        isMobile={isMobile}
-      />
+      <NextIntlClientProvider locale={locale}>
+        <NavigationLink
+          link={link}
+          text={text}
+          icon={Icon}
+          disabled={true}
+          isMobile={isMobile}
+        />
+      </NextIntlClientProvider>
     );
 
     const navLinkElement = screen.getByRole('link');
 
-    expect(navLinkElement).toHaveAttribute('href', link);
+    expect(navLinkElement).toHaveAttribute('href', `/${locale}${link}`);
     expect(navLinkElement).toHaveAttribute('aria-disabled', 'true');
   });
 });
