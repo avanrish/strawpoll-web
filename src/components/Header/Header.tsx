@@ -1,4 +1,3 @@
-import Link from 'next-intl/link';
 import {
   AbstractIntlMessages,
   NextIntlClientProvider,
@@ -7,6 +6,7 @@ import {
 } from 'next-intl';
 import pick from 'lodash/pick';
 
+import { Link } from '@/src/navigation';
 import { Logo } from '@/src/components/Logo';
 import { Routes } from '@/src/utils/enums/routes';
 import { MobileMenu } from '@/src/components/Header/MobileMenu';

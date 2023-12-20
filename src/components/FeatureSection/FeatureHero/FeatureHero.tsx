@@ -1,6 +1,6 @@
-import Link from 'next-intl/link';
 import Image from 'next/image';
 
+import { Link } from '@/src/navigation';
 import { FeatureHeroProps } from '@/src/components/FeatureSection/FeatureHero/FeatureHero.type';
 
 export const FeatureHero = ({

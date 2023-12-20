@@ -1,7 +1,7 @@
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import { additionalMobileMenuLinks } from '@/src/utils/fixtures/navLinks';
+import {Link} from '@/src/navigation';
 
 export function MobileLowerSection() {
   const t = useTranslations('Header');

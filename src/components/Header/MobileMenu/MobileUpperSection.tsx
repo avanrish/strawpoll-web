@@ -1,4 +1,3 @@
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
@@ -6,6 +5,7 @@ import { Routes } from '@/src/utils/enums/routes';
 import { Logo } from '@/src/components/Logo';
 import { navLinks } from '@/src/utils/fixtures/navLinks';
 import { NavigationLink } from '@/src/components/Header/NavigationLink';
+import { Link } from '@/src/navigation';
 
 import { MobileUpperSectionProps } from './MobileUpperSection.type';
 

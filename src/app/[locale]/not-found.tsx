@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import { PollContainer } from '@/src/components/PollContainer';
 import error404 from '@/src/assets/error-404.png';
 import { Routes } from '@/src/utils/enums/routes';
+import { Link } from '@/src/navigation';
 
 export default function NotFound() {
   const t = useTranslations('NotFound');
