@@ -1,14 +1,14 @@
 'use client';
 
-import Link from 'next-intl/link';
 import {
-  ArrowSmallRightIcon,
+  ArrowRightIcon,
   ChartBarIcon,
   ShareIcon,
 } from '@heroicons/react/24/solid';
-
-import { Radio } from '@/src/components/Radio';
 import { useTranslations } from 'next-intl';
+
+import { Link } from '@/src/navigation';
+import { Radio } from '@/src/components/Radio';
 
 export const VoteForm = () => {
   const t = useTranslations('VoteForm');
@@ -38,7 +38,7 @@ export const VoteForm = () => {
             disabled
           >
             <span>{t('vote')}</span>
-            <ArrowSmallRightIcon className="w-5 h-5 hidden sm:block ml-2" />
+            <ArrowRightIcon className="w-5 h-5 hidden sm:block ml-2" />
           </button>
         </div>
         <div className="flex space-x-4 sm:justify-between w-full">
