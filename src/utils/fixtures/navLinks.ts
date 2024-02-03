@@ -17,7 +17,7 @@ export type NavLink = {
 export const navLinks: NavLink[] = [
   {
     i18nKey: 'createPoll',
-    link: Routes.CreatePoll,
+    link: Routes.CREATE_POLL,
     icon: ChartBarIcon,
   },
   {

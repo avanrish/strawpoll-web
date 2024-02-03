@@ -7,8 +7,8 @@ import { Locales } from '@/src/utils/enums/locales';
 import { NavigationLink } from './NavigationLink';
 
 describe('NavigationLink', () => {
-  const locale = Locales.English;
-  const link = Routes.CreatePoll;
+  const locale = Locales.ENGLISH;
+  const link = Routes.CREATE_POLL;
   const text = 'Example Link';
   const Icon = () => <svg data-testid="mock-icon" />;
   const disabled = false;

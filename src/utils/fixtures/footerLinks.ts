@@ -15,7 +15,7 @@ interface FooterLinks {
 
 export const footerLinks: FooterLinks = {
   solutions: [
-    { key: 'pollMaker', url: Routes.CreatePoll },
+    { key: 'pollMaker', url: Routes.CREATE_POLL },
     { key: 'meetingScheduler', url: '#', disabled: true },
     { key: 'discordBot', url: '#', disabled: true },
     { key: 'pollApi', url: '#', disabled: true },

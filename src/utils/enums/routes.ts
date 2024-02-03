@@ -1,4 +1,4 @@
 export enum Routes {
-  Home = '/',
-  CreatePoll = '/create',
+  HOME = '/',
+  CREATE_POLL = '/create',
 }

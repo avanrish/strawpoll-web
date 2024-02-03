@@ -14,7 +14,7 @@ export const MobileUpperSection = ({ closeMenu }: MobileUpperSectionProps) => {
   return (
     <div className="px-2 pt-5 pb-3 space-y-3">
       <div className="flex justify-between items-center">
-        <Link href={Routes.Home} className="px-3" onClick={closeMenu}>
+        <Link href={Routes.HOME} className="px-3" onClick={closeMenu}>
           <Logo className="text-gray-900 dark:text-white h-6" />
         </Link>
         <button

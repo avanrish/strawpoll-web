@@ -47,7 +47,7 @@ export default async function middleware(request: NextRequest) {
   const cspKey = 'Content-Security-Policy';
   request.headers.set(cspKey, csp);
 
-  const defaultLocale = Locales.English;
+  const defaultLocale = Locales.ENGLISH;
   const handleI18nRouting = createIntlMiddleware({
     locales,
     defaultLocale,

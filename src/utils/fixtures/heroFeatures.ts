@@ -38,7 +38,7 @@ export const heroFeatures: HeroFeature[] = [
     icon: ChartPieIcon,
     lightImage: lightPollMaker,
     darkImage: darkPollMaker,
-    link1: { url: Routes.CreatePoll },
+    link1: { url: Routes.CREATE_POLL },
     link2: { url: '#', disabled: true },
     which: 'first',
   },

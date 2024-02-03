@@ -18,7 +18,7 @@ export const CTASection = () => {
         <div className="mt-6 flex max-sm:flex-col max-sm:space-y-4 sm:space-x-5">
           <Link
             className="btn py-3 text-indigo-800 bg-indigo-50 hover:bg-indigo-100 sm:w-fit"
-            href={Routes.CreatePoll}
+            href={Routes.CREATE_POLL}
           >
             {t('links.createPoll')}
           </Link>

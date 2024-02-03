@@ -34,7 +34,7 @@ export const Main = () => {
               <div className="max-sm:w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:ml-12 lg:ml-14">
                 <Link
                   className="btn primary py-3 sm:px-8"
-                  href={Routes.CreatePoll}
+                  href={Routes.CREATE_POLL}
                 >
                   {t('createAPoll')}
                 </Link>

@@ -20,7 +20,7 @@ export const Header = () => {
     <header className="sticky top-0 z-[1] w-full ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-gray-900 shadow-sm">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 flex items-center relative h-16">
         <div className="px-2 lg:px-0">
-          <Link href={Routes.Home}>
+          <Link href={Routes.HOME}>
             <Logo className="text-gray-900 dark:text-white h-6" />
           </Link>
         </div>

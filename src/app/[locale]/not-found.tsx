@@ -23,7 +23,7 @@ export default function NotFound() {
             width={350}
           />
           <p className="text-red-500 text-center">{t('description')}</p>
-          <Link href={Routes.Home} className="btn primary text-sm">
+          <Link href={Routes.HOME} className="btn primary text-sm">
             {t('link')}
           </Link>
         </div>
