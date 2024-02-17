@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-import { appUrl } from '@/src/utils/fixtures/config';
 import { Hero } from '@/src/components/Hero';
 import { FeatureSection } from '@/src/components/FeatureSection';
 import { ExploreRankings } from '@/src/components/ExploreRankings';
 import { CTASection } from '@/src/components/CTASection';
+import { appUrl } from '@/src/utils/config/client';
 
 export default async function Home() {
   return (

@@ -7,13 +7,13 @@ import { formatDistanceToNowStrict } from 'date-fns';
 import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
 import { LockClosedIcon } from '@heroicons/react/24/solid';
 
-import { appUrl } from '@/src/utils/fixtures/config';
 import { PollContainer } from '@/src/components/PollContainer';
 import { VoteForm } from '@/src/components/VoteForm';
 import { getPoll } from '@/src/services/getPoll';
 import { VotePageProps } from '@/src/types/pages';
 import { getNotFoundMetadata } from '@/src/services/getNotFoundMetadata';
 import { localeToDateFnsLocale } from '@/src/utils/fixtures/localeToDateFnsLocale';
+import { appUrl } from '@/src/utils/config/client';
 
 export default async function PollVote({
   params: { locale, pollId },

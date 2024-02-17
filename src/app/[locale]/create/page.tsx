@@ -9,7 +9,6 @@ import {
 import pick from 'lodash/pick';
 
 import { MetadataPropsWithLocale } from '@/src/types/common';
-import { appUrl } from '@/src/utils/fixtures/config';
 import { PollContainer } from '@/src/components/PollContainer';
 import { PollMaker } from '@/src/components/PollMaker/PollMaker';
 import { Statistics } from '@/src/components/Hero/Statistics';
@@ -17,6 +16,7 @@ import { ExploreRankings } from '@/src/components/ExploreRankings';
 import { HowItWorks } from '@/src/components/HowItWorks';
 import { PollMakerFeatures } from '@/src/components/PollMakerFeatures';
 import { HelpCenter } from '@/src/components/HelpCenter';
+import { appUrl } from '@/src/utils/config/client';
 
 export default function Create({
   params: { locale },
