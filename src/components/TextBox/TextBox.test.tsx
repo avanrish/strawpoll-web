@@ -29,7 +29,7 @@ describe('TextBox', () => {
 
     expect(input).toBeInTheDocument();
     expect(input).toHaveClass(
-      'placeholder:text-red-400 text-rose-900 outline-red-500 border-red-300'
+      'placeholder:text-red-400 text-red-500 focus:ring-red-500'
     );
   });
 
