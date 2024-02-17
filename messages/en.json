@@ -245,8 +245,8 @@
   "VotePage": {
     "oneVotePerIP": "One vote per IP-Address allowed.",
     "makeAChoice": "Make a choice:",
-    "title": "{{title}} - Online Poll - StrawPoll.com",
-    "description": "What's your opinion? Vote now: {{options}}...",
+    "title": "{title} - Online Poll - StrawPoll.com",
+    "description": "What's your opinion? Vote now: {options}...",
     "byGuest": "by a guest"
   }
 }

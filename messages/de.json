@@ -245,8 +245,8 @@
   "VotePage": {
     "oneVotePerIP": "Eine Stimme pro IP-Adresse erlaubt.",
     "makeAChoice": "Treffen Sie eine Wahl:",
-    "title": "{{title}} - Online-Umfrage - StrawPoll.com",
-    "description": "Was ist Ihre Meinung? Stimmen Sie jetzt ab: {{options}}...",
+    "title": "{title} - Online-Umfrage - StrawPoll.com",
+    "description": "Was ist Ihre Meinung? Stimmen Sie jetzt ab: {options}...",
     "byGuest": "von einem Gast"
   }
 }
