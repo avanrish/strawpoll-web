@@ -1,8 +1,18 @@
 import { ImageResponse } from 'next/og';
 
 import { Logo } from '@/src/components/Logo';
+import { getPoll } from '@/src/services/getPoll';
+import { getTranslations } from 'next-intl/server';
+import { EmptyOGImage } from '@/src/components/EmptyOGImage';
 
-export default async function Image() {
+export default async function Image({
+  params,
+}: {
+  params: { pollId: string };
+}) {
+  const t = await getTranslations('VoteForm');
+  const poll = await getPoll(params.pollId);
+  if (!poll) return new ImageResponse(<EmptyOGImage />);
   return new ImageResponse(
     (
       <div
@@ -18,8 +28,7 @@ export default async function Image() {
         }}
       >
         <Logo />
-        {/* TODO: Change Test to real text */}
-        <p style={{ fontSize: 54, margin: '96px 0' }}>Test</p>
+        <p style={{ fontSize: 54, margin: '96px 0' }}>{poll.title}</p>
         <p
           style={{
             backgroundColor: '#4F47E5',
@@ -29,8 +38,7 @@ export default async function Image() {
             borderRadius: 12,
           }}
         >
-          {/* TODO: Use translation */}
-          Vote
+          {t('vote')}
         </p>
       </div>
     )

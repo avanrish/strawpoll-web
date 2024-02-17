@@ -9,27 +9,24 @@ import { useTranslations } from 'next-intl';
 
 import { Link } from '@/src/navigation';
 import { Radio } from '@/src/components/Radio';
+import { VoteFormProps } from '@/src/components/VoteForm/VoteForm.type';
 
-export const VoteForm = () => {
+export const VoteForm = ({ poll }: VoteFormProps) => {
   const t = useTranslations('VoteForm');
 
   return (
     <>
       <div className="mt-4 space-y-3">
-        <Radio
-          name="options"
-          value="1"
-          label="zxc"
-          checked
-          onChange={() => null}
-        />
-        <Radio
-          name="options"
-          value="2"
-          label="cxz"
-          checked={false}
-          onChange={() => null}
-        />
+        {poll.options.map((option) => (
+          <Radio
+            key={option.id}
+            name="options"
+            value={option.id}
+            label={option.title}
+            checked={false}
+            onChange={() => null}
+          />
+        ))}
       </div>
       <div className="mt-8 grid grid-cols-1 gap-4 sm:flex">
         <div>
