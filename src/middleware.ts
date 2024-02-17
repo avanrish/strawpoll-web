@@ -23,8 +23,8 @@ export function generateCsp() {
       values: ["'report-sample'", "'self'", "'unsafe-inline'"],
     },
     {
-      name: 'connect-src',
-      values: ["'self'"],
+      name: `connect-src`,
+      values: ["'self'", new URL(`${process.env.NEXT_PUBLIC_API_URL}`).host],
     },
     { name: 'font-src', values: ["'self'", 'data:'] },
     { name: 'img-src', values: ["'self'", 'data:'] },

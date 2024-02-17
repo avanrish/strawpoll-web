@@ -162,7 +162,22 @@
         "long": "Add another option"
       }
     },
-    "createPoll": "Create poll"
+    "createPoll": "Create poll",
+    "errors": {
+      "unknown": "An unknown error occurred. Please try again later.",
+      "title": {
+        "required": "Please enter a title.",
+        "invalid": "The title is invalid.",
+        "maxLength": "The title can contain at most 255 characters."
+      },
+      "options": {
+        "option": {
+          "required": "Please enter at least one answer option.",
+          "invalid": "One of the options is invalid.",
+          "maxLength": "One of the options can contain at most 255 characters."
+        }
+      }
+    }
   },
   "HowItWorks": {
     "subtitle": "How it works",

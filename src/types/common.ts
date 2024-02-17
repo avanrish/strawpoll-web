@@ -1,4 +1,5 @@
 import { Locales } from '@/src/utils/enums/locales';
+import { PollType } from '@/src/utils/enums/pollType';
 
 export interface MetadataPropsWithLocale {
   params: {
@@ -12,3 +13,25 @@ export type HeroIcon = React.ComponentType<
     titleId?: string | undefined;
   }
 >;
+
+export interface ApiResult<T> {
+  result: T;
+}
+
+export interface Poll {
+  id: number;
+  createdAt: string;
+  updatedAt: string;
+  publicId: string;
+  title: string;
+  type: PollType;
+  options: PollOption[];
+}
+
+export interface PollOption {
+  id: number;
+  createdAt: string;
+  updatedAt: string;
+  title: string;
+  count: number;
+}

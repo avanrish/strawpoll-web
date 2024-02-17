@@ -162,7 +162,22 @@
         "long": "Option hinzufügen"
       }
     },
-    "createPoll": "Umfrage erstellen"
+    "createPoll": "Umfrage erstellen",
+    "errors": {
+      "unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.",
+      "title": {
+        "required": "Bitte geben Sie einen Titel ein.",
+        "invalid": "Der Titel ist ungültig.",
+        "maxLength": "Der Titel darf höchstens 255 Zeichen enthalten."
+      },
+      "options": {
+        "option": {
+          "required": "Bitte geben Sie mindestens eine Antwortoption ein.",
+          "invalid": "Eine der Optionen ist ungültig.",
+          "maxLength": "Eine der Optionen darf höchstens 255 Zeichen enthalten."
+        }
+      }
+    }
   },
   "HowItWorks": {
     "subtitle": "Wie es funktioniert",
