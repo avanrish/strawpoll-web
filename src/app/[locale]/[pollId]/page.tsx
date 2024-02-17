@@ -71,7 +71,10 @@ export async function generateMetadata({
   if (!poll) return getNotFoundMetadata();
   const t = await getTranslations('VotePage');
 
-  const options = poll.options.toSpliced(0, 3).join(', ');
+  const options = poll.options
+    .slice(0, 3)
+    .map((o) => o.title)
+    .join(', ');
 
   return {
     title: t('title', { title: poll.title }),
