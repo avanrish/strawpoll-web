@@ -240,7 +240,19 @@
     "vote": "Abstimmen",
     "share": "Teilen",
     "results": "Ergebnisse",
-    "showResults": "Ergebnisse"
+    "showResults": "Ergebnisse",
+    "validatingVote": "Validierung...",
+    "errors": {
+      "unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.",
+      "optionIds": {
+        "required": "Bitte wählen Sie mindestens 1 Option(en).",
+        "onlyIntegers": "IDs müssen ganze Zahlen sein."
+      },
+      "poll": {
+        "notFound": "Die Umfrage, an der Sie teilnehmen möchten, existiert nicht.",
+        "alreadyVoted": "Sie haben an dieser Umfrage bereits abgestimmt."
+      }
+    }
   },
   "VotePage": {
     "oneVotePerIP": "Eine Stimme pro IP-Adresse erlaubt.",
@@ -248,5 +260,11 @@
     "title": "{title} - Online-Umfrage - StrawPoll.com",
     "description": "Was ist Ihre Meinung? Stimmen Sie jetzt ab: {options}...",
     "byGuest": "von einem Gast"
+  },
+  "VoteSuccessModal": {
+    "voteSuccess": "Abstimmung erfolgreich",
+    "voteSuccessDescription": "Vielen Dank für Ihre Teilnahme an dieser Umfrage. Ihre Stimme wurde gezählt.",
+    "results": "Ergebnisse",
+    "share": "Teilen"
   }
 }

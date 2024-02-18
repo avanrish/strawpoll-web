@@ -9,9 +9,9 @@ import { LockClosedIcon } from '@heroicons/react/24/solid';
 
 import { PollContainer } from '@/src/components/PollContainer';
 import { VoteForm } from '@/src/components/VoteForm';
-import { getPoll } from '@/src/services/getPoll';
+import { getPoll } from '@/src/services/api/getPoll';
 import { VotePageProps } from '@/src/types/pages';
-import { getNotFoundMetadata } from '@/src/services/getNotFoundMetadata';
+import { getNotFoundMetadata } from '@/src/services/internal/getNotFoundMetadata';
 import { localeToDateFnsLocale } from '@/src/utils/fixtures/localeToDateFnsLocale';
 import { appUrl } from '@/src/utils/config/client';
 
@@ -49,7 +49,13 @@ export default async function PollVote({
             <div>{t('makeAChoice')}</div>
             <NextIntlClientProvider
               locale={locale}
-              messages={pick(messages, 'VoteForm') as AbstractIntlMessages}
+              messages={
+                pick(
+                  messages,
+                  'VoteForm',
+                  'VoteSuccessModal'
+                ) as AbstractIntlMessages
+              }
             >
               <VoteForm poll={poll} />
             </NextIntlClientProvider>

@@ -240,7 +240,19 @@
     "vote": "Vote",
     "share": "Share",
     "results": "Results",
-    "showResults": "Show results"
+    "showResults": "Show results",
+    "validatingVote": "Validating...",
+    "errors": {
+      "unknown": "An unknown error occurred. Please try again later.",
+      "optionIds": {
+        "required": "Please choose at least 1 option(s).",
+        "onlyIntegers": "IDs must be integers."
+      },
+      "poll": {
+        "notFound": "The poll you are trying to vote on does not exist.",
+        "alreadyVoted": "You have already voted on this poll."
+      }
+    }
   },
   "VotePage": {
     "oneVotePerIP": "One vote per IP-Address allowed.",
@@ -248,5 +260,11 @@
     "title": "{title} - Online Poll - StrawPoll.com",
     "description": "What's your opinion? Vote now: {options}...",
     "byGuest": "by a guest"
+  },
+  "VoteSuccessModal": {
+    "voteSuccess": "Vote successful",
+    "voteSuccessDescription": "Thank you for participating in this poll. Your vote has been counted.",
+    "results": "Results",
+    "share": "Share"
   }
 }

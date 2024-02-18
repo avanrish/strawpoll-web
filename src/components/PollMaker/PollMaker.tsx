@@ -5,12 +5,10 @@ import { nanoid } from 'nanoid';
 import { PlusIcon } from '@heroicons/react/24/outline';
 
 import { TextBox } from '@/src/components/TextBox';
-import { api } from '@/src/utils/axios';
-import { PollType } from '@/src/utils/enums/pollType';
 import { ErrorMessage } from '@/src/components/ErrorMessage';
 import { LoadingSpinner } from '@/src/components/LoadingSpinner';
-import { ApiResult, Poll } from '@/src/types/common';
 import { useRouter } from '@/src/navigation';
+import { createPoll } from '@/src/services/api/createPoll';
 
 export const PollMaker = () => {
   const [pollTitle, setPollTitle] = useState('');
@@ -28,24 +26,11 @@ export const PollMaker = () => {
   const submit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setRequestStatus({ errors: {}, loading: true });
-    try {
-      const { data } = await api.post<ApiResult<Poll>>('/polls', {
-        title: pollTitle,
-        type: PollType.SINGLE_CHOICE,
-        options: options.map((option) => option.value),
-      });
-      router.push(`/${data.result.publicId}`);
-    } catch (err: any) {
-      const errors: {
-        [key: string]: any;
-      } = {};
-      if (err.response.status !== 400) errors.general = 'errors.unknown';
-      else {
-        for (const error of err.response.data.message) {
-          errors[error.split('.')[0]] = ['errors', error].join('.');
-        }
-      }
-      setRequestStatus({ errors, loading: false });
+    const result = await createPoll(pollTitle, options);
+    if (result.success) {
+      router.push(`/${result.data.publicId}`);
+    } else {
+      setRequestStatus({ errors: result.data, loading: false });
     }
   };
 
@@ -109,11 +94,14 @@ export const PollMaker = () => {
         <div className="pt-6">
           {(requestStatus?.errors?.general ||
             requestStatus?.errors?.options) && (
-            <ErrorMessage
-              text={t(
-                requestStatus?.errors?.general || requestStatus?.errors?.options
-              )}
-            />
+            <div className="mb-5">
+              <ErrorMessage
+                text={t(
+                  requestStatus?.errors?.general ||
+                    requestStatus?.errors?.options
+                )}
+              />
+            </div>
           )}
           <div className="grid grid-cols-1 gap-6">
             <button

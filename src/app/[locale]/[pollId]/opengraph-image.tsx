@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 import { Logo } from '@/src/components/Logo';
-import { getPoll } from '@/src/services/getPoll';
+import { getPoll } from '@/src/services/api/getPoll';
 import { getTranslations } from 'next-intl/server';
 import { EmptyOGImage } from '@/src/components/EmptyOGImage';
 

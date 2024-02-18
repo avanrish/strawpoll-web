@@ -35,3 +35,12 @@ export interface PollOption {
   title: string;
   count: number;
 }
+
+export interface ErrorObject {
+  [key: string]: any;
+}
+
+export interface ServiceResult<T> {
+  success: boolean;
+  data: T;
+}
