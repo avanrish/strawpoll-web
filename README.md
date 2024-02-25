@@ -30,6 +30,11 @@ To set up the project on your local machine:
    pnpm install
    ```
    You can also use `npm` or `yarn`, but `pnpm` is recommended for this project.
+4. Create a `.env` file in the root of the project:
+   ```bash
+   cp .env.example .env
+   ```
+   You can modify the environment variables in the `.env` file as needed.
 
 ## Running the Application
 
