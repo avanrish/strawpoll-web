@@ -1,0 +1,284 @@
+{
+  "Index": {
+    "metadata": {
+      "title": "StrawPoll: Erstelle eine Umfrage in Sekunden",
+      "description": "Eine StrawPoll ist eine Abstimmung, die Menschen helfen kann, bessere Entscheidungen zu treffen. StrawPoll ist die einfachste Möglichkeit, sofort und kostenlos Meinungsumfragen in Echtzeit zu erstellen.",
+      "siteName": "StrawPoll"
+    }
+  },
+  "Create": {
+    "metadata": {
+      "title": "Umfrage erstellen - Kostenlose Abstimmungen - StrawPoll.com",
+      "description": "Unser Umfrage-Tool ist kostenlos, einfach zu bedienen und besonders schnell! Die Vision von StrawPoll ist es, es für jeden wirklich einfach zu machen, schöne Online-Umfragen in kürzester Zeit zu erstellen.",
+      "siteName": "StrawPoll"
+    },
+    "title": "Umfrage erstellen",
+    "subtitle": "Füllen Sie die folgenden Felder aus, um Ihre Umfrage zu erstellen."
+  },
+  "Header": {
+    "createPoll": "Umfrage erstellen",
+    "scheduleMeeting": "Terminumfrage",
+    "demo": "Demo",
+    "pricing": "Preise",
+    "helpCenter": "Hilfe-Center",
+    "guides": "Anleitungen",
+    "liveDemo": "Live-Demo",
+    "faq": "F.A.Q.",
+    "pollApi": "Umfrage-API",
+    "about": "Über uns",
+    "login": "Anmelden",
+    "signUp": "Registrieren",
+    "existingUser": "Bestehender Benutzer? <link>Anmelden</link>"
+  },
+  "Hero": {
+    "Main": {
+      "imageAlt": "Splash image",
+      "titlePart1": "Erstelle eine Umfrage",
+      "titlePart2": "in Sekunden",
+      "description": "Sie möchten Ihre Freunde fragen, wohin sie am Freitagabend gehen sollen, oder ein Treffen mit Kollegen vereinbaren? Erstellen Sie eine Umfrage - und erhalten Sie im Handumdrehen Antworten.",
+      "createAPoll": "Umfrage erstellen",
+      "viewExamples": "Live Demo"
+    },
+    "Stats": {
+      "title": "Mehr als 500,000 Nutzer weltweit vertrauen darauf",
+      "polls": "Umfragen",
+      "votes": "Stimmen",
+      "users": "Benutzer"
+    }
+  },
+  "FeatureSection": {
+    "first": {
+      "title": "Nutze unsere fortschrittlichen Umfragetools",
+      "description": "Eine StrawPoll ist eine Abstimmung, die dazu dient, auf einfache Weise die Meinung einer Gruppe oder der Öffentlichkeit zu einem bestimmten Thema zu ermitteln. Strawpolls sind sehr nützlich, wenn nur die Meinung der Mehrheit wichtig ist und nicht die Meinung jedes einzelnen Teilnehmers.",
+      "link1": {
+        "label": "Umfrage erstellen"
+      },
+      "link2": {
+        "label": "Beispiel ansehen"
+      }
+    },
+    "second": {
+      "title": "Planen Sie Ihre Meetings in kürzester Zeit",
+      "description": "StrawPoll Meetings ist ein großartiges und einfaches Tool zur Planung von Besprechungen und anderen Terminen mit Kunden, Kollegen oder Freunden. Eine Meeting-Umfrage ist sehr hilfreich in Situationen, in denen die Meinung jedes einzelnen Teilnehmers wichtig ist.",
+      "link1": {
+        "label": "Terminumfrage erstellen"
+      },
+      "link2": {
+        "label": "Beispiel ansehen"
+      }
+    },
+    "features": {
+      "title": "Einfache Umfragen mit leistungsstarker Konfiguration",
+      "subtitle": "Abstimmen leicht gemacht",
+      "description": "Während wir unsere Umfragen so einfach und schön wie möglich gestalten, bieten wir auch leistungsstarke Anpassungsoptionen, die eine bedarfsgerechte Anpassung für viele verschiedene Zwecke ermöglichen.",
+      "fakeDetection": {
+        "title": "Erkennung von Fälschungen",
+        "description": "Standardmäßig werden Bots und VPN-Benutzer von der Stimmabgabe bei Umfragen ausgeschlossen."
+      },
+      "deadlines": {
+        "title": "Deadlines",
+        "description": "Unsere Umfragen laufen auf unbestimmte Zeit. Sie können das ändern, indem Sie eine Deadline festlegen."
+      },
+      "emojiSupport": {
+        "title": "Emoji-Unterstützung",
+        "description": "Wir unterstützen alle gängigen Emojis. Sie können so viele Emojis verwenden, wie Sie wollen!"
+      },
+      "liveResults": {
+        "title": "Live-Ergebnisse",
+        "description": "Werten Sie Ihre Umfrageergebnisse in einem Torten- oder Balkendiagramm in Echtzeit aus."
+      },
+      "api": {
+        "title": "Umfrage-API",
+        "description": "Wir bieten eine einfach zu verwendende API für die Erstellung von Umfragen und die Analyse der Ergebnisse."
+      },
+      "activeDevelopment": {
+        "title": "Aktive Entwicklung",
+        "description": "Wir arbeiten kontinuierlich an zusätzlichen Funktionen, verbessertem Design und QoL-Updates."
+      }
+    }
+  },
+  "ExploreRankings": {
+    "title": "Entdecken Sie unsere Rankings",
+    "description": "Stimmen Sie über Tausende von interessanten Themen ab und verschaffen Sie sich Gehör!",
+    "linkLabel": "Übersicht der Ranglisten",
+    "explorePopularCategories": "Beliebte Kategorien erkunden",
+    "entertainment": "Unterhaltung",
+    "popCulture": "Popkultur",
+    "travel": "Reisen",
+    "gaming": "Spielen",
+    "sports": "Sport"
+  },
+  "CTASection": {
+    "title": {
+      "part1": "Sind Sie bereit, loszulegen?",
+      "part2": "Starten Sie jetzt kostenfrei mit StrawPoll."
+    },
+    "links": {
+      "createPoll": "Umfrage erstellen",
+      "signUp": "Registrieren"
+    }
+  },
+  "Footer": {
+    "description": "Einfaches und kostenloses Erstellen von Echtzeit-Umfragen und Abstimmungen.",
+    "languages": {
+      "en": "Englisch",
+      "de": "Deutsch"
+    },
+    "categories": {
+      "solutions": "Lösungen",
+      "support": "Support",
+      "company": "Unternehmen",
+      "legal": "Rechtliches"
+    },
+    "links": {
+      "pollMaker": "Umfrage erstellen",
+      "meetingScheduler": "Terminumfrage",
+      "discordBot": "Discord-Bot",
+      "pollApi": "Umfrage-API",
+      "rankings": "Rankings",
+      "pricing": "Preise",
+      "helpCenter": "Hilfe-Center",
+      "guides": "Anleitungen",
+      "faq": "F.A.Q.",
+      "integrations": "Integrationen",
+      "about": "Über uns",
+      "imprint": "Impressum",
+      "contact": "Kontakt",
+      "privacyPolicy": "Datenschutz",
+      "termsOfService": "AGB"
+    },
+    "legalInfo": "Diese Website basiert auf StrawPoll.com. Sie ist weder mit StrawPoll.com verbunden noch wird sie in irgendeiner Weise von ihnen unterstützt. Für echte Umfragen, besuchen Sie bitte <link>strawpoll.com</link>."
+  },
+  "PollMaker": {
+    "pollTitle": {
+      "label": "Titel",
+      "placeholder": "Geben Sie Ihre Frage hier ein"
+    },
+    "answers": {
+      "label": "Antwort-Optionen",
+      "option": "Option {number}",
+      "addAnswer": {
+        "short": "Option hinzufügen",
+        "long": "Option hinzufügen"
+      }
+    },
+    "createPoll": "Umfrage erstellen",
+    "errors": {
+      "unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.",
+      "title": {
+        "required": "Bitte geben Sie einen Titel ein.",
+        "invalid": "Der Titel ist ungültig.",
+        "maxLength": "Der Titel darf höchstens 255 Zeichen enthalten."
+      },
+      "options": {
+        "option": {
+          "required": "Bitte geben Sie mindestens eine Antwortoption ein.",
+          "invalid": "Eine der Optionen ist ungültig.",
+          "maxLength": "Eine der Optionen darf höchstens 255 Zeichen enthalten."
+        }
+      }
+    }
+  },
+  "HowItWorks": {
+    "subtitle": "Wie es funktioniert",
+    "title": "Neu bei StrawPoll? Kein Problem!",
+    "description": "Wir haben unser Umfragetool gestaltet, dass er so einfach und intuitiv wie möglich zu bedienen ist. Gleichzeitig optimieren wir ständig den Arbeitsablauf bei der Erstellung von Umfragen auf StrawPoll.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Eine Umfrage erstellen",
+        "description": "Wählen Sie einen Titel, eine Reihe von Antwortmöglichkeiten und einige Grundeinstellungen."
+      },
+      {
+        "step": 2,
+        "title": "Teilen Sie Ihren Link",
+        "description": "Laden Sie Teilnehmer ein, indem Sie Ihren StrawPoll-Link teilen."
+      },
+      {
+        "step": 3,
+        "title": "Ergebnisse erhalten",
+        "description": "Wenn eine Stimme abgegeben wird, werden die Ergebnisse in Echtzeit aktualisiert."
+      }
+    ]
+  },
+  "PollMakerFeatures": {
+    "pollInSeconds": {
+      "title": "Erstelle eine Umfrage in Sekunden",
+      "description": {
+        "part1": "Ob es sich um eine schnelle Umfrage mit Freunden oder die Lösung einer ewigen Diskussion in Ihrem Forum handelt, StrawPoll hilft Ihnen, die Antwort schnell und einfach zu finden.",
+        "part2": "Sind Sie in den sozialen Medien aktiv und wollten Sie schon immer wissen, was Ihre Follower wirklich denken? Hier können Sie in Sekundenschnelle eine kostenlose Umfrage erstellen, ohne sich anzumelden oder zu registrieren. Natürlich bieten wir für komplexe Funktionen und zur Verwaltung Ihrer Umfragen auch ein Login an, das aber nicht zwingend erforderlich ist."
+      },
+      "link": "Erfahren Sie mehr darüber, wie Sie Ihre erste Umfrage erstellen können →"
+    },
+    "realTimeResults": {
+      "title": "Erhalte die Ergebnisse in Echtzeit",
+      "description": {
+        "part1": "Die Ergebnisse einer Umfrage werden in Echtzeit über eine Server-zu-Client-Push-Kommunikation aktualisiert. Der Administrator einer Umfrage kann jederzeit ändern, wer Zugriff auf die Ergebnisse haben soll, und kann weitere nützliche Einstellungen vornehmen.",
+        "part2": ""
+      },
+      "link": "Erfahren Sie mehr über unsere verschiedenen Umfragearten →"
+    }
+  },
+  "HelpCenter": {
+    "imageAlt": "Hilfe-Center",
+    "subtitle": "Hilfe-Center",
+    "title": "Wir sind hier, um zu helfen",
+    "description": "Während die grundlegende Schnittstelle einfach gehalten ist, bietet StrawPoll leistungsstarke Werkzeuge, die Anpassungen bei Bedarf für viele verschiedene Zwecke ermöglichen. Unser Hilfe-Center ist eine ständig wachsende Ressource, die Ihnen bei Problemen hilft und Funktionen entdeckt, die Sie noch nicht kennen.",
+    "link": "Besuchen Sie das Hilfezentrum"
+  },
+  "NotFound": {
+    "metadata": {
+      "title": "Seite nicht gefunden - Fehler 404 - StrawPoll.com",
+      "description": "Seite nicht gefunden - Fehler 404 - StrawPoll.com"
+    },
+    "title": "Seite nicht gefunden",
+    "imageAlt": "Seite nicht gefunden - Fehler 404",
+    "description": "Diese Seite wurde entweder gelöscht oder hat nie existiert.",
+    "link": "Zurück zur Startseite"
+  },
+  "VoteForm": {
+    "vote": "Abstimmen",
+    "share": "Teilen",
+    "results": "Ergebnisse",
+    "showResults": "Ergebnisse",
+    "validatingVote": "Validierung...",
+    "errors": {
+      "unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.",
+      "optionIds": {
+        "required": "Bitte wählen Sie mindestens 1 Option(en).",
+        "onlyIntegers": "IDs müssen ganze Zahlen sein."
+      },
+      "poll": {
+        "notFound": "Die Umfrage, an der Sie teilnehmen möchten, existiert nicht.",
+        "alreadyVoted": "Sie haben an dieser Umfrage bereits abgestimmt."
+      }
+    }
+  },
+  "VotePage": {
+    "oneVotePerIP": "Eine Stimme pro IP-Adresse erlaubt.",
+    "makeAChoice": "Treffen Sie eine Wahl:",
+    "title": "{title} - Online-Umfrage - StrawPoll.com",
+    "description": "Was ist Ihre Meinung? Stimmen Sie jetzt ab: {options}...",
+    "byGuest": "von einem Gast"
+  },
+  "VoteSuccessModal": {
+    "voteSuccess": "Abstimmung erfolgreich",
+    "voteSuccessDescription": "Vielen Dank für Ihre Teilnahme an dieser Umfrage. Ihre Stimme wurde gezählt.",
+    "results": "Ergebnisse",
+    "share": "Teilen"
+  },
+  "PollResults": {
+    "results": "Ergebnisse",
+    "byGuest": "von einem Gast",
+    "title": "{title} - Umfrageergebnisse - StrawPoll.com",
+    "description": "Was ist deine Meinung? Jetzt abstimmen: {options}...",
+    "Results": {
+      "votesCount": "{count, plural, =1 {# Stimme} other {# Stimmen}}",
+      "chartWillBeRendered": "Hier wird ein Tortendiagramm angezeigt.",
+      "totalVotes": "Gesamtstimmen: {count}",
+      "liveResults": "Live-Ergebnisse",
+      "share": "Teilen",
+      "backToPoll": "Zurück zur Umfrage"
+    }
+  }
+}

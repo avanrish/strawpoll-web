@@ -1,0 +1,1 @@
+export { OptionResultBar } from './OptionResultBar';

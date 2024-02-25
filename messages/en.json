@@ -1,0 +1,284 @@
+{
+  "Index": {
+    "metadata": {
+      "title": "StrawPoll: Create your poll in seconds",
+      "description": "Making it easy to create instant, real-time polls and surveys for free. StrawPoll is the simplest way to create instant, real-time polls for free.",
+      "siteName": "StrawPoll"
+    }
+  },
+  "Create": {
+    "metadata": {
+      "title": "Create a Poll - Free Poll Maker - StrawPoll.com",
+      "description": "Create an online poll for free. StrawPoll offers a simple and fast solution, whether you want to create an anonymous poll for a large audience or group polls with friends.",
+      "siteName": "StrawPoll"
+    },
+    "title": "Create a Poll",
+    "subtitle": "Complete the below fields to create your poll."
+  },
+  "Header": {
+    "createPoll": "Create Poll",
+    "scheduleMeeting": "Schedule Meeting",
+    "demo": "Demo",
+    "pricing": "Pricing",
+    "helpCenter": "Help Center",
+    "guides": "Guides",
+    "liveDemo": "Live Demo",
+    "faq": "F.A.Q.",
+    "pollApi": "Poll API",
+    "about": "About",
+    "login": "Login",
+    "signUp": "Sign up",
+    "existingUser": "Existing user? <link>Login</link>"
+  },
+  "Hero": {
+    "Main": {
+      "imageAlt": "Splash image",
+      "titlePart1": "Create your poll",
+      "titlePart2": "in seconds",
+      "description": "Want to ask your friends where to go friday night or arrange a meeting with co-workers? Create a poll - and get answers in no time.",
+      "createAPoll": "Create a poll",
+      "viewExamples": "View examples"
+    },
+    "Stats": {
+      "title": "Trusted by over 500,000 users worldwide",
+      "polls": "Polls",
+      "votes": "Votes",
+      "users": "Users"
+    }
+  },
+  "FeatureSection": {
+    "first": {
+      "title": "Use our advanced poll maker",
+      "description": "A straw poll is a voting that can be used to help people to easily determine the opinion of a group or the public on some issue. Straw polls are very useful when only the majority opinion is important and not the opinion of each individual participant.",
+      "link1": {
+        "label": "Create a poll"
+      },
+      "link2": {
+        "label": "View example"
+      }
+    },
+    "second": {
+      "title": "Schedule your meetings in no-time",
+      "description": "StrawPoll Meetings is a great and simple tool to schedule meetings and other times with clients, colleagues or friends. A meeting poll is very helpful in situations where the opinion of each individual participant is important.",
+      "link1": {
+        "label": "Schedule a meeting"
+      },
+      "link2": {
+        "label": "View example"
+      }
+    },
+    "features": {
+      "title": "Simple polls with powerful configuration",
+      "subtitle": "Polling made easy",
+      "description": "While we make our polls as simple and beautiful as possible, we also offer powerful customization options to enable on-demand adjustments for many different purposes.",
+      "fakeDetection": {
+        "title": "Fake Detection",
+        "description": "By default, bots and VPN users are blocked from voting on straw polls."
+      },
+      "deadlines": {
+        "title": "Deadlines",
+        "description": "Our polls run indefinitely. You can change that by setting a deadline."
+      },
+      "emojiSupport": {
+        "title": "Emoji Support",
+        "description": "We support all Emojis natively. Feel free to use as many as you want!"
+      },
+      "liveResults": {
+        "title": "Live Results",
+        "description": "Evaluate your poll results in a pie chart or bar graph in real-time."
+      },
+      "api": {
+        "title": "Poll API",
+        "description": "We provide an easy to use API for poll creation and result analysis."
+      },
+      "activeDevelopment": {
+        "title": "Active Development",
+        "description": "We are continuously working on additional features and QoL updates."
+      }
+    }
+  },
+  "ExploreRankings": {
+    "title": "Explore Our Rankings",
+    "description": "Vote on thousands of interesting topics and make your voice heard!",
+    "linkLabel": "Rankings Overview",
+    "explorePopularCategories": "Explore popular categories",
+    "entertainment": "Entertainment",
+    "popCulture": "Pop Culture",
+    "travel": "Travel",
+    "gaming": "Gaming",
+    "sports": "Sports"
+  },
+  "CTASection": {
+    "title": {
+      "part1": "Ready to get started?",
+      "part2": "It's free!"
+    },
+    "links": {
+      "createPoll": "Create a poll",
+      "signUp": "Sign up"
+    }
+  },
+  "Footer": {
+    "description": "Making it easy to create instant, real-time polls and surveys for free.",
+    "languages": {
+      "en": "English",
+      "de": "German"
+    },
+    "categories": {
+      "solutions": "Solutions",
+      "support": "Support",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "pollMaker": "Poll Maker",
+      "meetingScheduler": "Meeting Scheduler",
+      "discordBot": "Discord Bot",
+      "pollApi": "Poll API",
+      "rankings": "Rankings",
+      "pricing": "Pricing",
+      "helpCenter": "Help Center",
+      "guides": "Guides",
+      "faq": "F.A.Q.",
+      "integrations": "Integrations",
+      "about": "About",
+      "imprint": "Imprint",
+      "contact": "Contact",
+      "privacyPolicy": "Privacy",
+      "termsOfService": "Terms"
+    },
+    "legalInfo": "This website is based on StrawPoll.com. It is not affiliated with StrawPoll.com or endorsed by them in any way. For any real polls, please visit <link>strawpoll.com</link>."
+  },
+  "PollMaker": {
+    "pollTitle": {
+      "label": "Title",
+      "placeholder": "Type your question here"
+    },
+    "answers": {
+      "label": "Answers",
+      "option": "Option {number}",
+      "addAnswer": {
+        "short": "Add option",
+        "long": "Add another option"
+      }
+    },
+    "createPoll": "Create poll",
+    "errors": {
+      "unknown": "An unknown error occurred. Please try again later.",
+      "title": {
+        "required": "Please enter a title.",
+        "invalid": "The title is invalid.",
+        "maxLength": "The title can contain at most 255 characters."
+      },
+      "options": {
+        "option": {
+          "required": "Please enter at least one answer option.",
+          "invalid": "One of the options is invalid.",
+          "maxLength": "One of the options can contain at most 255 characters."
+        }
+      }
+    }
+  },
+  "HowItWorks": {
+    "subtitle": "How it works",
+    "title": "New to StrawPoll? No problem.",
+    "description": "We have designed our poll maker to be as easy and intuitive to use as possible. At the same time, we are constantly optimizing the workflow of creating online polls on StrawPoll.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Create a poll",
+        "description": "Choose a title, a set of answer options and some basic settings."
+      },
+      {
+        "step": 2,
+        "title": "Share your link",
+        "description": "Invite participants by sharing your StrawPoll link."
+      },
+      {
+        "step": 3,
+        "title": "Get results",
+        "description": "When a vote is cast, results will be updated in real-time."
+      }
+    ]
+  },
+  "PollMakerFeatures": {
+    "pollInSeconds": {
+      "title": "Create an online poll in a matter of seconds",
+      "description": {
+        "part1": "Whether it's a quick poll with friends or the solution to an eternal discussion in your forum, StrawPoll helps you find the answer quickly and easily.",
+        "part2": "Are you on social media and have you ever wanted to know what your followers really think? Here you can create a free poll in seconds, without any signup or registration. Of course, for complex features and to manage your polls, we also offer a login, which is not mandatory."
+      },
+      "link": "Learn more about how to create your first poll →"
+    },
+    "realTimeResults": {
+      "title": "Get your results in real-time",
+      "description": {
+        "part1": "The results of a poll are updated in real time via server-to-client push communication. The admin of a poll can change who should have access to the results at any time and can choose other useful settings.",
+        "part2": ""
+      },
+      "link": "Learn more about our different poll types →"
+    }
+  },
+  "HelpCenter": {
+    "imageAlt": "Help Center",
+    "subtitle": "Help Center",
+    "title": "We're here to help",
+    "description": "While the basic interface is kept simple, StrawPoll provides powerful tools to enable on-demand adjustments for many different purposes. Our help center is an ever-growing resource to help you get assistance with problems and discover features you don't know yet.",
+    "link": "Visit the help center"
+  },
+  "NotFound": {
+    "metadata": {
+      "title": "Page not found - Error 404 - StrawPoll.com",
+      "description": "Page not found - Error 404 - StrawPoll.com"
+    },
+    "title": "Page not found",
+    "imageAlt": "Page not found - Error 404",
+    "description": "This page was either deleted or never existed.",
+    "link": "Go to the start page"
+  },
+  "VoteForm": {
+    "vote": "Vote",
+    "share": "Share",
+    "results": "Results",
+    "showResults": "Show results",
+    "validatingVote": "Validating...",
+    "errors": {
+      "unknown": "An unknown error occurred. Please try again later.",
+      "optionIds": {
+        "required": "Please choose at least 1 option(s).",
+        "onlyIntegers": "IDs must be integers."
+      },
+      "poll": {
+        "notFound": "The poll you are trying to vote on does not exist.",
+        "alreadyVoted": "You have already voted on this poll."
+      }
+    }
+  },
+  "VotePage": {
+    "oneVotePerIP": "One vote per IP-Address allowed.",
+    "makeAChoice": "Make a choice:",
+    "title": "{title} - Online Poll - StrawPoll.com",
+    "description": "What's your opinion? Vote now: {options}...",
+    "byGuest": "by a guest"
+  },
+  "VoteSuccessModal": {
+    "voteSuccess": "Vote successful",
+    "voteSuccessDescription": "Thank you for participating in this poll. Your vote has been counted.",
+    "results": "Results",
+    "share": "Share"
+  },
+  "PollResults": {
+    "results": "Results",
+    "byGuest": "by a guest",
+    "title": "{title} - Poll Results - StrawPoll.com",
+    "description": "What's your opinion? Vote now: {options}...",
+    "Results": {
+      "votesCount": "{count, plural, =1 {# vote} other {# votes}}",
+      "chartWillBeRendered": "A pie chart will be rendered here.",
+      "totalVotes": "Total votes: {count}",
+      "liveResults": "Live results",
+      "share": "Share",
+      "backToPoll": "Back to poll"
+    }
+  }
+}

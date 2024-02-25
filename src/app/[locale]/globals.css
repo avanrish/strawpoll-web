@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'><path stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 0.5rem center;
+        background-size:1.5em 1.5em;
+        padding-right: 2.5rem;
+        @apply focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply inline-flex px-4 font-medium text-center py-2 rounded-md border border-transparent items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 transition-all disabled:opacity-50 disabled:pointer-events-none;
+    }
+    .btn.primary {
+        @apply text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600;
+    }
+    .btn.secondary {
+        @apply text-white bg-indigo-500 hover:bg-indigo-600;
+    }
+    .navlink {
+        @apply font-medium flex items-center aria-disabled:opacity-50 aria-disabled:pointer-events-none;
+    }
+    .navlink.mobile {
+        @apply space-x-3 p-3 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700/50
+    }
+    .navlink.desktop{
+        @apply px-1 pt-1 border-b-2 border-transparent hover:border-gray-300;
+    }
+    .navlink.desktop:hover span {
+        @apply dark:text-gray-300;
+    }
+    .label {
+        @apply block text-sm font-medium text-gray-700 dark:text-gray-300 leading-5;
+    }
+    .form-item-error {
+        @apply text-red-600 text-sm mt-2;
+    }
+}
+
