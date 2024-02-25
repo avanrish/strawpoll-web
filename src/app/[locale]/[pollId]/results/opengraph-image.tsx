@@ -10,7 +10,7 @@ export default async function Image({
 }: {
   params: { pollId: string };
 }) {
-  const t = await getTranslations('VoteForm');
+  const t = await getTranslations('PollResults');
   const poll = await getPoll(params.pollId);
   if (!poll) return new ImageResponse(<EmptyOGImage />);
   return new ImageResponse(
@@ -38,7 +38,7 @@ export default async function Image({
             borderRadius: 12,
           }}
         >
-          {t('vote')}
+          {t('results')}
         </p>
       </div>
     )

@@ -266,5 +266,19 @@
     "voteSuccessDescription": "Vielen Dank für Ihre Teilnahme an dieser Umfrage. Ihre Stimme wurde gezählt.",
     "results": "Ergebnisse",
     "share": "Teilen"
+  },
+  "PollResults": {
+    "results": "Ergebnisse",
+    "byGuest": "von einem Gast",
+    "title": "{title} - Umfrageergebnisse - StrawPoll.com",
+    "description": "Was ist deine Meinung? Jetzt abstimmen: {options}...",
+    "Results": {
+      "votesCount": "{count, plural, =1 {# Stimme} other {# Stimmen}}",
+      "chartWillBeRendered": "Hier wird ein Tortendiagramm angezeigt.",
+      "totalVotes": "Gesamtstimmen: {count}",
+      "liveResults": "Live-Ergebnisse",
+      "share": "Teilen",
+      "backToPoll": "Zurück zur Umfrage"
+    }
   }
 }

@@ -266,5 +266,19 @@
     "voteSuccessDescription": "Thank you for participating in this poll. Your vote has been counted.",
     "results": "Results",
     "share": "Share"
+  },
+  "PollResults": {
+    "results": "Results",
+    "byGuest": "by a guest",
+    "title": "{title} - Poll Results - StrawPoll.com",
+    "description": "What's your opinion? Vote now: {options}...",
+    "Results": {
+      "votesCount": "{count, plural, =1 {# vote} other {# votes}}",
+      "chartWillBeRendered": "A pie chart will be rendered here.",
+      "totalVotes": "Total votes: {count}",
+      "liveResults": "Live results",
+      "share": "Share",
+      "backToPoll": "Back to poll"
+    }
   }
 }

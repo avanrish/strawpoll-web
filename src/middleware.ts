@@ -24,7 +24,11 @@ export function generateCsp() {
     },
     {
       name: `connect-src`,
-      values: ["'self'", new URL(`${process.env.NEXT_PUBLIC_API_URL}`).host],
+      values: [
+        "'self'",
+        new URL(`${process.env.NEXT_PUBLIC_API_URL}`).host,
+        `ws://${new URL(`${process.env.NEXT_PUBLIC_API_URL}`).host}`,
+      ],
     },
     { name: 'font-src', values: ["'self'", 'data:'] },
     { name: 'img-src', values: ["'self'", 'data:'] },
